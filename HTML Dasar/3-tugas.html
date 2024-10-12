@@ -1,0 +1,63 @@
+<!-- * Buat form pendaftaran dengan field input (nama, email, password, jenis kelamin, tanggal lahir, dll). -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>HTML Dasar/Easy/3</title>
+</head>
+
+<body>
+	<form>
+		<table border="1" cellspacing="0" cellpadding="8">
+			<thead>
+				<tr>
+					<th colspan="2" bgcolor="#eee">
+						<h1>Form Pendaftaran</h1>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><label for="nama">Nama Lengkap</label></td>
+					<td><input type="text" id="nama" placeholder="Cth: Fachrul Ariestyan"></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email</label></td>
+					<td><input type="email" id="email" placeholder="ariestyann@email.com"></td>
+				</tr>
+				<tr>
+					<td><label for="password">Password</label></td>
+					<td><input type="password" id="password" placeholder="Masukan kata sandi"></td>
+				</tr>
+				<tr>
+					<td><label for="jeniskelamin">Jenis Kelamin</label></td>
+					<td><input type="radio" id="jeniskelamin" name="jeniskelamin" value="laki-laki">Laki-laki
+						<br>
+						<input type="radio" id="jeniskelamin" name="jeniskelamin" value="perempuan">Perempuan
+					</td>
+				</tr>
+				<tr>
+					<td><label for="date">Tanggal Lahir</label></td>
+					<td><input type="date" id="date"></td>
+				</tr>
+				<tr>
+					<td><label for="tel">Masukan nomor telepon</label></td>
+					<td><input type="tel" id="tel"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><button type="submit">Daftar Sekarang</button></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2" align="center">Dengan mendaftar, Anda setuju dengan syarat <br>dan ketentuan serta kebijakan
+						privasi kami.</td>
+				</tr>
+			</tfoot>
+		</table>
+	</form>
+	</body>
+
+</html>

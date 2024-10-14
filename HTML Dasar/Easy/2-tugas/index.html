@@ -6,19 +6,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Dasar/Easy/2</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <table border="1" cellspacing="0" cellpadding="8">
-    <caption>Table Mahasiswa Tahun 2024</caption>
-    <thead bgcolor="#eee">
+  <!-- table -->
+  <table class="table">
+    <caption class="table__caption">Table Mahasiswa Tahun 2024</caption>
+    <thead class="table__header">
       <tr>
-        <td><b>Mahasiswa</b></td>
-        <td><b>Jurusan</b></td>
-        <td><b>IPK</b></td>
+        <th>Mahasiswa</th>
+        <th>Jurusan</th>
+        <th>IPK</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody class="table__body">
       <tr>
         <td>Fachrul Ariestyan</td>
         <td>Informatika</td>
@@ -46,6 +49,7 @@
       </tr>
     </tbody>
   </table>
+  <!-- [END] table -->
 </body>
 
 </html>

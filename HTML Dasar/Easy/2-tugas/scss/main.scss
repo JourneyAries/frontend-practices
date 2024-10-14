@@ -35,14 +35,19 @@ body{
     text-transform: uppercase;
     text-align: left;
 
-      th:not(:last-child){
-        width: 200px;
-      }
+    tr{
+      display: flex;
+      gap: 16px;
+    }
 
-      th:last-child{
+    th:not(:last-child){
+        width: 200px;
+    }
+
+    th:last-child{
         width: 48px;
         text-align: center;
-      }
+    }
   }
 
   &__body{

@@ -34,6 +34,10 @@ body {
   text-transform: uppercase;
   text-align: left;
 }
+.table__header tr {
+  display: flex;
+  gap: 16px;
+}
 .table__header th:not(:last-child) {
   width: 200px;
 }

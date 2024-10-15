@@ -1,0 +1,85 @@
+<!-- * Buat halaman portfolio dengan berbagai elemen HTML (image, video, link, list, dan paragraf). -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content="width=device-width, initial-scale=1.0">
+  <title>HTML Dasar/Medium/1</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <main class="container">
+    <section class="content">
+      <!-- header -->
+      <header class="header">
+        <h1>Portfolio Jhon Doe</h1>
+        <p>Selamat datang di portfolio saya! Di sini Anda bisa menemukan karya terbaik saya!</p>
+      </header>
+      <!-- [END] header] -->
+    
+      <!-- gambar -->
+      <section class="project-terbaru">
+        <h2>Project Terbaru</h2>
+        <div class="project-terbaru__warpper">
+          <a href="#" style="text-decoration: none;">
+            <img src='img/1.jpg' />
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <img src='img/2.jpg' />
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <img src='img/3.jpg' />
+          </a>
+        </div>
+      </section>
+      <!-- [END] gambar -->
+    
+      <!-- Daftar Project -->
+      <section class="daftar-project">
+        <h2>Project yang Telah Diselesaikan</h2>
+        <div class="daftar-project__list">
+          <div class="daftar-project__kolom">
+            <p>Website E-commerce</p>
+            <p>Aplikasi Mobile Pemesanan Makanan</p>
+          </div>
+          <div class="daftar-project__kolom">
+            <p>Desain logo untuk Brand XYZ</p>
+            <div><p>Sistem Manajemen Konten</p>
+          </div>
+        </div>
+      </section>
+      <!-- [END] Daftar Project -->
+    
+      <!-- Perkenalan Diri -->
+      <section class="perkenalan">
+        <div class="perkenalan__text">
+          <h2>Perkenalan Diri</h2>
+          <p>Saya adalah seorang desainer web dan pengembang aplikasi dengan pengalaman lebih dari 5 tahun. Saya telah bekerja dengan berbagai klien dan industri, menciptakan solusi digital yang memenuhi kebutuhan unik mereka. Saya memiliki
+          keterampilan dalam HTML, CSS, JavaScript, dan berbagai framework modern.</p>
+        </div>
+        <a class="perkenalan__video" href="#">
+          <video width="300" height="200" controls>
+            <source src="video-proyek.mp4" type="video/mp4">
+            Browser Anda tidak menduung video tag
+          </video>
+        </a>
+      </section>
+      <!-- [END] Perkenalan Diri -->
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="footer__tautan">
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+      <p>© 2024 John Doe. Semua hak dilindungi.</p>
+    </footer>
+    <!-- [END] Footer-->
+  </main>
+</body>
+
+</html>

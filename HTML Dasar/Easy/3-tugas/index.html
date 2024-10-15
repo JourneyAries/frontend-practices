@@ -6,36 +6,44 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>HTML Dasar/Easy/3</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-	<form>
-		<table border="1" cellspacing="0" cellpadding="8">
-			<thead>
+	<!-- form -->
+	<form class="form">
+		<table class="form__table">
+			<thead class="form__header">
 				<tr>
-					<th colspan="2" bgcolor="#eee">
+					<th colspan="2">
 						<h1>Form Pendaftaran</h1>
 					</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody class="form__body">
 				<tr>
 					<td><label for="nama">Nama Lengkap</label></td>
-					<td><input type="text" id="nama" placeholder="Cth: Fachrul Ariestyan"></td>
+					<td><input type="text" id="nama" placeholder="Cth: Fachrul Ariestyan">
+					</td>
 				</tr>
 				<tr>
-					<td><label for="email">Email</label></td>
+					<td><label for="email">Email Aktif</label></td>
 					<td><input type="email" id="email" placeholder="ariestyann@email.com"></td>
 				</tr>
 				<tr>
-					<td><label for="password">Password</label></td>
+					<td><label for="password">Kata Sandi</label></td>
 					<td><input type="password" id="password" placeholder="Masukan kata sandi"></td>
 				</tr>
 				<tr>
 					<td><label for="jeniskelamin">Jenis Kelamin</label></td>
-					<td><input type="radio" id="jeniskelamin" name="jeniskelamin" value="laki-laki">Laki-laki
-						<br>
-						<input type="radio" id="jeniskelamin" name="jeniskelamin" value="perempuan">Perempuan
+					<td class="pilihan-radio">
+						<label for="laki-laki">
+							<input type="radio" id="laki-laki" name="jeniskelamin" value="laki-laki">Laki-laki
+						</label>
+						<label for="perempuan">
+							<input type="radio" id="perempuan" name="jeniskelamin" value="perempuan">Perempuan
+						</label>
 					</td>
 				</tr>
 				<tr>
@@ -43,21 +51,22 @@
 					<td><input type="date" id="date"></td>
 				</tr>
 				<tr>
-					<td><label for="tel">Masukan nomor telepon</label></td>
-					<td><input type="tel" id="tel"></td>
+					<td><label for="tel">Nomor Telepon</label></td>
+					<td><input type="tel" id="tel" placeholder="+628952637487"></td>
 				</tr>
-				<tr>
-					<td colspan="2" align="center"><button type="submit">Daftar Sekarang</button></td>
+				<tr class="button">
+					<td colspan="2"><button type="submit">Daftar Sekarang</button></td>
 				</tr>
 			</tbody>
-			<tfoot>
+			<tfoot class="form__footer">
 				<tr>
-					<td colspan="2" align="center">Dengan mendaftar, Anda setuju dengan syarat <br>dan ketentuan serta kebijakan
+					<td>Dengan mendaftar, Anda setuju dengan syarat <br>dan ketentuan serta kebijakan
 						privasi kami.</td>
 				</tr>
 			</tfoot>
 		</table>
 	</form>
+	<!-- [END] form -->
 	</body>
 
 </html>

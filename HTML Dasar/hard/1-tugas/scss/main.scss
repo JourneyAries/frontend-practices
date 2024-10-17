@@ -50,7 +50,7 @@ body {
 .nav,
 .content,
 .footer {
-  padding: 24px 64px;
+  padding: 64px 64px;
 }
 
 .nav {
@@ -159,6 +159,19 @@ body {
     padding: 4px 12px;
     border-radius: 4px;
     border: 1px solid #9E968D;
+  }
+
+  button {
+    border-radius: 8px;
+    background-color: #F38637;
+    box-shadow: 0px 8px 0px 0px #6D2E00;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: 28px;
+    text-align: center;
+    color: white;
+    padding: 12px;
   }
 }
 

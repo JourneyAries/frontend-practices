@@ -1,0 +1,80 @@
+:root {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+p,
+summary {
+  color: #2B1A06;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+p,
+summary {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+.faq {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 64px;
+  margin: 100px auto;
+  background-color: #FEFBF7;
+  border-radius: 24px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  details {
+    background-color: #F9F3EC;
+    border-radius: 16px;
+    padding: 16px 24px;
+    cursor: pointer;
+  }
+
+  summary {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  summary:after {
+    content: "\25BC";
+  }
+
+  details[open] summary:after {
+    content: "\25B2";
+  }
+
+  details[open] summary {
+    opacity: 0.5;
+  }
+
+  details p {
+    padding-top: 16px;
+  }
+}

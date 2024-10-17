@@ -1,0 +1,174 @@
+:root {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+a:visited {
+  color: #2B1A06;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+p,
+label,
+input,
+textarea {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+body {
+  background-color: wheat;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  background-color: #FEFBF7;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+.nav,
+.content,
+.footer {
+  padding: 24px 64px;
+}
+
+.nav {
+  background-color: #EAE0D4;
+  padding: 24px 64px;
+}
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+}
+.nav a {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.content #home {
+  background-color: #EAE0D4;
+  border-radius: 16px;
+  text-align: center;
+  padding: 24px 32px;
+}
+.content #testimonials {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.content .testimonials__card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px 32px;
+  background-color: #5C5348;
+  flex-grow: 1;
+  border-radius: 16px;
+}
+.content .testimonials__card h2,
+.content .testimonials__card h3,
+.content .testimonials__card p {
+  color: white;
+}
+.content .testimonials__description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px 64px 64px 64px;
+  background-color: #EAE0D4;
+}
+.footer__tautan {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.footer a {
+  font-weight: 700;
+}
+.footer a:visited {
+  color: #2B1A06;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+}
+#contact form {
+  padding: 32px;
+  background-color: #F9F3EC;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+#contact label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+#contact textarea {
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid #9E968D;
+}
+
+.contact__header {
+  padding: 24px 20px;
+  background-color: #EAE0D4;
+  text-align: center;
+}
+
+.contact__nama-email {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.contact__nama-email label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+.contact__nama-email input {
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid #9E968D;
+}
+
+/*# sourceMappingURL=main.css.map */

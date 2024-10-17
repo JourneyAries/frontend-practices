@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Dasar/hard/2</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <main class="container">
+    <!-- header pengguna -->
+    <div class="header">
+      <img src='img/1.png' />
+      <h1>Fachrul Ariestyan</h1>
+
+      <!-- informasi pengguna -->
+      <div class="header__info">
+        <h2>Informasi Pengguna</h2>
+        <div class="header__section">
+          <div class="header__row">
+            <div class="header__detail">
+              <p>Ariestyann@gmail.com</p>
+              <h3>Email Aktif</h3>
+            </div>
+            <div class="header__detail">
+              <p>1 Januari 2000</p>
+              <h3>Tanggal Lahir</h3>
+            </div>
+          </div>
+          <div class="header__detail">
+            <p>Jln. Contoh No. 123, Jakarta, Indonesia</p>
+            <h3>Alamat Lengkap</h3>
+          </div>
+        </div>
+      </div>
+      <!-- [END] informasi pengguna -->
+    </div>
+    <!-- [END] header pengguna -->
+  
+    <!-- riwayat aktivitas -->
+    <div class="aktivitas">
+      <h2>Riwayat Akttivitas</h2>
+      <ul class="aktivitas__column">
+        <li class="aktivitas__detail">
+          <h3>Login</h3>
+          <p>1 Oktober 2024</p>
+        </li>
+        <li class="aktivitas__detail">
+          <h3>Account</h3>
+          <p>Mengubah kata sandi pada 15 September 2024</p>
+        </li>
+        <li class="aktivitas__detail">
+          <h3>Post</h3>
+          <p>Membuat postingan baru pada 10 Septermber 2024</p>
+        </li>
+      </ul>
+    </div>
+    <!-- [END] riwayat aktivitas -->
+  
+    <!-- ubah informas -->
+    <div class="ubah-informasi">
+      <h2>Ubah Informasi Pengguna</h2>
+      <form>
+        <fieldset class="ubah-informasi__row">
+          <fieldset class="ubah-informasi__column">
+            <label for="nama">Nama Pengguna
+              <input type="text" value="Jhon Doe">
+            </label>
+            <label for="email">Email Aktif
+              <input type="text" value="Jhondoe@example.com">
+            </label>
+            <label for="tanggal-lahir">Tanggal lahir
+              <input type="date" value="2000-12-01">
+            </label>
+          </fieldset>
+          <label for="alamat">Alamat lengkap 
+            <textarea id="alamat">Jln. Contoh No. 123, Jakarta, Indonesia</textarea>
+          </label>
+        </fieldset>
+        <button type="submit">Kirim Perubahan</button>
+      </form>
+    </div>
+    <!-- [END] ubah informasi -->
+  </main>
+</body>
+
+</html>

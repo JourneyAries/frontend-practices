@@ -1,0 +1,171 @@
+:root {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+h1,
+h2,
+p {
+  color: #2B1A06;
+}
+
+h3,
+label {
+  color: rgba(43, 26, 6, 0.6);
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3,
+label {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 28px;
+}
+
+p,
+input,
+textarea {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  background-color: #FEFBF7;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 100px 64px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  margin: 100px auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 16px;
+}
+.header__info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.header__section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.header__row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.header__detail {
+  padding: 12px 24px;
+  background-color: #F9F3EC;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.aktivitas {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.aktivitas__column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.aktivitas__detail {
+  padding: 12px 24px;
+  background-color: #F9F3EC;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.aktivitas h3 {
+  width: 100px;
+}
+
+.ubah-informasi {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.ubah-informasi form {
+  padding: 32px;
+  background-color: #F9F3EC;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.ubah-informasi__row {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.ubah-informasi__column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+}
+.ubah-informasi label {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
+}
+.ubah-informasi input,
+.ubah-informasi textarea {
+  padding: 4px 12px;
+  border: 1px solid #9E968D;
+}
+.ubah-informasi textarea {
+  height: 100%;
+}
+.ubah-informasi button {
+  border-radius: 8px;
+  background-color: #EAE0D4;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 0;
+  color: rgba(64, 39, 10, 0.5);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

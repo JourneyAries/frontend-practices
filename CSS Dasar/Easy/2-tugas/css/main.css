@@ -1,0 +1,58 @@
+:root {
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: #EBEBEB;
+}
+
+nav {
+  display: grid;
+  place-content: center;
+  padding: 64px;
+}
+nav ul {
+  display: inline-flex;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+  padding: 0 32px;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  overflow: hidden;
+  color: #9A9CB1;
+}
+nav a:hover {
+  background-color: #E9EEFF;
+  color: #9297CA;
+}
+nav a:active {
+  color: #1A1A1A;
+}
+nav a span {
+  position: absolute;
+  height: 6px;
+  border-radius: 4px 4px 0px 0px;
+  background-color: #3444DD;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+}
+nav .active, nav .active span {
+  bottom: 0px;
+  color: #1A1A1A;
+}
+
+/*# sourceMappingURL=main.css.map */

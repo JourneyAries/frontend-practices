@@ -1,0 +1,40 @@
+<!-- * Buat style untuk link navigasi di state normal, hover, dan active. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Dasar/Easy/2</title>
+
+  <!-- link -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Beranda<span></span></a></li>
+      <li><a href="#">Tentang Kami<span></span></a></li>
+      <li><a href="#">Layanan<span></span></a></li>
+      <li><a href="#">Kontak<span></span></a></li>
+    </ul>
+  </nav>
+
+  <script>
+    const navLinks = document.querySelectorAll('nav a');
+
+    
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        link.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+
+</html>

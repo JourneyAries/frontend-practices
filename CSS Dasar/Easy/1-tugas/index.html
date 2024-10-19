@@ -1,0 +1,33 @@
+<!-- * Buat hover effect pada tombol submit di form. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Dasar/Easy/1</title>
+  
+  <!-- link -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <form method="POST">
+    <h1>Kirim Pesan:</h1>
+    <div class="form-group">
+      <fieldset class="nama">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" name="name" pattern="^[A-Z][a-z]+(?:\s[A-Z][a-z]+){1,49}$" title="Harus mengandung Huruf Kapital dan kecil, angka, titik, garis bawah, spasi. minimal 2 huruf maksimal 50 huruf" required>
+      </fieldset>
+      <fieldset class="email">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" pattern="^[a-z0-9.-_]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Hanya huruf kecil, angka, titik, garis bawah, dan tanda hubung yang diperbolehkan." required>
+      </fieldset>
+      <fieldset class="saran-kritik">
+        <label for="saran-kritik">Saran & Kritik</label>
+        <textarea name="saran-kritik" id="saran-kritik"></textarea>
+      </fieldset>
+    </div>
+    <button type="submit">Kirim Sekarang</button>
+  </form>
+</body>
+</html>

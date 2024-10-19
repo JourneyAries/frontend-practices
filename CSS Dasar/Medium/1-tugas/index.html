@@ -1,0 +1,85 @@
+<!-- * Buat layout dua kolom dengan CSS, satu untuk konten utama dan satu untuk sidebar -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Dasar/Medium/1</title>
+
+  <!-- Link -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- main content -->
+    <main class="main-content">
+      <h1>Mengeoptimalkan Waktu Kerja</h1>
+      <p>Mengelola waktu dengan baik adalah kunci untuk meningkatkan produktivitas. Fokus pada tugas-tugas prioritas dan hindari gangguan yang tidak perlu.</p>
+
+      <section class="main-content__list">
+        <h3>1. Buat Rencana Harian</h3>
+        <p>Setiap pagi, susun rencana kerja yang jelas. Tentukan tugas mana yang paling penting dan selesaikan terlebih dahulu.</p>
+        
+        <h3>2. Kurangi Multitasking</h3>
+        <p>Multitasking sering kali mengurangi efektivitas. Fokus pada satu tugas hingga selesai sebelum beralih ke tugas berikutnya.</p>
+      </section>
+
+      <h2>Tips Singkat</h2>
+      <ul class="main-content__card">
+        <li>Gunakan alat bantu seperti to-do list</li>
+        <li>Istirahat singkat dapat meningkatkan fokus</li>
+        <li>Tetapkan batas waktu untuk setiap tugas</li>
+      </ul>
+    </main>
+    <!-- [END] main content -->
+
+    <!-- sidebar -->
+    <aside class="sidebar"> 
+      <h2>Artikel Terkait</h2>
+      <ul>
+        <li>
+          <a href="#">
+            <img class="sidebar__img-article" src="img/article/1.png">
+            <div class="sidebar__text">
+              <h2>Manajemen Waktu untuk Pemula</h2>
+              <div class="sidebar__profile">
+                <img class="sidebar__img-profile" src="img/profile/1.png">
+                <h6>JourneyAries</h6>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="sidebar__img-article" src="img/article/2.png">
+            <div class="sidebar__text">
+              <h2>Menghindari Dar Prokrastinasi</h2>
+              <div class="sidebar__profile">
+                <img class="sidebar__img-profile" src="img/profile/2.png">
+                <h6>JourneyAries</h6>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="sidebar__img-article" src="img/article/3.png">
+            <div class="sidebar__text">
+              <h2>Meningkatkan Fokus dan Konsentrasi</h2>
+              <div class="sidebar__profile">
+                <img class="sidebar__img-profile" src="img/profile/3.png">
+                <h6>JourneyAries</h6>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- [END] sidebar -->
+  </div>
+</body>
+
+</html>

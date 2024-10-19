@@ -1,0 +1,85 @@
+:root {
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+h1, p {
+  color: #262626;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.48px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.48px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 24px;
+}
+
+button {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+}
+
+body {
+  background-color: #ddd;
+}
+
+article {
+  margin: 64px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px 24px;
+  border-radius: 16px;
+  background-color: #F5F5F5;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+  max-width: 360px;
+}
+article img {
+  border-radius: 16px;
+  width: 312px;
+  height: 206px;
+}
+article hr {
+  height: #BDBDBD;
+  width: 100%;
+}
+article span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+article button {
+  padding: 16px 16px;
+  text-align: center;
+  border-radius: 99px;
+  border: 1px solid #0632A6;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  line-height: 24px;
+  cursor: pointer;
+  background: linear-gradient(180deg, #5884FF 0%, #3444DD 100%);
+  transition: 0.2s;
+}
+article button:hover {
+  box-shadow: 0px -4px 24px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(1, 9, 55, 0.15), 0px 8px 12px 0px rgba(1, 9, 55, 0.13);
+  text-shadow: 0px 2px 4px rgba(1, 9, 55, 0.3);
+}
+
+/*# sourceMappingURL=main.css.map */

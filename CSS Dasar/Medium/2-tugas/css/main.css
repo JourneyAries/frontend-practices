@@ -1,0 +1,77 @@
+:root {
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h1, .h2, .h3, .h4 {
+  color: #262626;
+}
+
+h1 {
+  font-size: 26px;
+  letter-spacing: -0.52px;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.chapter {
+  border-radius: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+  background-color: #F5F5F5;
+  width: 400px;
+  padding: 64px;
+  margin: 64px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.chapter hr {
+  width: 100%;
+  border: 1px dashed #D8D8D8;
+}
+.chapter__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.chapter__first {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.chapter__first > li {
+  font-size: 20px;
+  letter-spacing: -0.4px;
+  font-weight: 700;
+  padding-bottom: 4px;
+}
+.chapter__second {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 27px;
+}
+.chapter__second li {
+  font-size: 16px;
+  letter-spacing: -0.32px;
+}
+.chapter__third {
+  isplay: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 31px;
+}
+.chapter ol {
+  list-style-position: inside;
+}
+.chapter li::marker {
+  content: counters(list-item, ".") ". ";
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,62 @@
+:root {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+a, a:visited {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #9A9CB1;
+  display: inline-block;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.container {
+  margin: 64px auto;
+  max-width: 600px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+.nav__main-menu {
+  display: flex;
+  flex-direction: row;
+}
+.nav__dropdown {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: red;
+}
+.nav__dropdown:hover .nav__submenu {
+  visibility: visible;
+  opacity: 1;
+  top: 120%;
+}
+.nav__submenu {
+  background-color: #fff;
+  border-radius: 8px;
+  z-index: -1;
+  position: absolute;
+  transition: 0.4s ease;
+  top: 0%;
+  width: 100%;
+}
+.nav a {
+  padding: 8px 16px;
+  width: 100%;
+}
+.nav a:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=main.css.map */

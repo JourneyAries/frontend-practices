@@ -1,0 +1,155 @@
+:root{
+  font-family: "Prompt", sans-serif;
+}
+
+h1,h2,h3,p{
+  color: #0F1964;
+}
+
+button{
+  color: #575BEC;
+}
+
+h1,h2{
+  font-weight: 600;
+}
+
+h1{
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -1.28px;
+}
+
+h2{
+  font-size: 60px;
+  line-height: 46px;
+  letter-spacing: -2.404px;
+}
+
+h3, p, button{
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.container{
+  max-width: 1024;
+}
+
+.pricing{
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  text-align: center;
+  background-color: #F5F5F9;
+
+  *[class]{
+    display: flex;
+  }
+
+  &__body{
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    padding: 64px 0;
+  }
+  
+  &__card{
+    flex-direction: column;
+    padding: 32px;
+    gap: 32px;
+    background-color: #FFF;
+    border-radius: 12px;
+    border: 1px solid #E7E7EB;
+    position: relative;
+  }
+
+  &__header{
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__list{
+    flex-direction: column;
+  }
+
+  li{
+    padding: 12px 0;
+
+    &:first-child{
+      border-top: 1px solid #E7E7EB;
+    }
+    &:not(:first-child){
+      border-top: 1px solid #E7E7EB;
+    }
+    &:last-child{
+      border-bottom: 1px solid #E7E7EB;
+    }
+  }
+
+  &__button{
+    border-radius: 28px;
+    padding: 8px 20px;
+    justify-content: center;
+    border: 1px solid #575BEC;
+    background-color: inherit;
+    cursor: pointer; 
+
+    &:hover{
+      background-color: #575BEC;
+      color: white;
+      text-shadow: .5px 0 0 white;
+    }
+  }
+
+}
+
+.pricing__card--highlighted{
+  transform: scale(1.2);
+  z-index: 2;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+  
+  .pricing__button{
+    background-color: #575BEC;
+    color: white;
+    font-weight: 600;
+
+    &:hover{
+      background-color: #292DBF;
+    }
+  }
+}
+
+@media screen and (max-width:964px) {
+  .pricing{
+    padding: 64px 32px;
+    &__body{
+      flex-direction: column;
+      padding: 0;
+    }
+    &__card{
+      position: static;
+    }
+  }
+  
+  .pricing__card--highlighted{
+    transform: scale(1);
+    box-shadow: none;
+    
+    .pricing__button{
+      background-color: #575BEC;
+      color: white;
+      font-weight: 600;
+
+      &:hover{
+        background-color: #292DBF;
+      }
+    }
+  }
+}
+@media screen and (max-width:500px) {
+  .pricing{
+    padding: 64px 16px;
+  }
+}

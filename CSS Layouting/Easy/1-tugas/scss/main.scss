@@ -1,0 +1,158 @@
+:root{
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+  background-color: #ddd;
+}
+
+.container{
+  max-width: 1024px;
+  background-color: #F6FBFF;
+  margin: 0 auto;
+}
+
+.nav{
+  padding: 0 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  &__logo{
+    padding: 8px 12px;
+  }
+
+  &__menu{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, auto));
+    justify-items: center;
+    width: max-content;
+    align-items: center;
+  }
+
+  a{
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 20px;
+    font-size: 16px;
+    color: #1a1a1a;
+    font-weight: 500;
+    line-height: 28px;
+    text-decoration: none;
+    justify-content: center;
+    width: 100%;
+
+    &:hover{
+      color: white;
+      border-radius: 36px;
+      background: linear-gradient(180deg, #50ADFA 0%, #1988E5 100%);
+      text-shadow: 1px 0 0 currentColor;
+    }
+
+    &:hover .nav__icon{
+      background: url("../img/CaretDown-hover.svg");
+    }
+  }
+
+  li{
+    display: flex;
+    align-items: center;
+  }
+
+  &__services{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  } 
+
+  &__icon{
+    background: url("../img/CaretDown-default.svg");
+    width: 20px;
+    height: 20px;
+  }
+
+  &__dropdown{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &:hover .nav__submenu{
+      display: flex;
+    }
+  }
+
+
+  &__submenu{
+    display: none;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 16px;
+    border: 1px solid #CDD4DA;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+    position: absolute;
+    top: 100%;
+    gap: 4px;
+    z-index: 1;
+
+    & a:hover{
+      border-radius: 36px;
+      background: #2D379C;
+    }
+  }
+
+  hr{
+    margin: 0;
+    width: 100%;
+    border: 1px solid #CDD4DA;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 1023px){
+  .nav{
+    padding: 0 32px;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  .nav{
+    padding: 16px 16px;
+    flex-direction: column;
+    gap: 16px;
+
+    &__logo{
+      text-align: center;
+    }
+
+    &__menu{
+      grid-template-columns: 1fr;
+      width: 100%;
+      justify-items: stretch;
+      gap: 8px;
+    }
+
+    &__dropdown{
+      display: flex;
+      flex-direction: column;
+      position: static;
+
+    &:hover .nav__submenu{
+        display: flex;
+      }
+    }
+
+    &__submenu{
+    display: none;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+
+
+    & a:hover{
+      border-radius: 36px;
+      background: #2D379C;
+    }
+  }
+  }
+}

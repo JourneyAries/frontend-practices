@@ -1,0 +1,41 @@
+<!-- * Flexbox Navigation Bar: Buatlah sebuah navbar responsif menggunakan Flexbox. Navbar harus memiliki logo di sebelah kiri dan beberapa link di sebelah kanan. Pastikan link-link tersebut terdistribusi dengan baik dan dapat berubah layout menjadi vertikal ketika layar mengecil.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Layouting/Easy/1</title>
+
+  <!-- link -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <main class="container">
+      <nav class="nav">
+        <div class="nav__logo">
+          <img src="img/1.png">
+        </div>
+        <ul class="nav__menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="nav__dropdown">
+            <a class="nav__services" href="#">Services<span class="nav__icon"></span></a>
+            <ul class="nav__submenu">
+              <li><a href="#">Marketing</a></li>
+              <hr>
+              <li><a href="#">Design</a></li>
+              <hr>
+              <li><a href="#">Development</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+  </main>
+
+
+</body>
+</html>
+

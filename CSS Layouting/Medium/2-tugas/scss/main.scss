@@ -1,0 +1,132 @@
+:root{
+  font-family: "Prompt", serif;
+}
+
+h1{
+  font-size: 32px;
+  color: white;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 3.52px;
+}
+
+p{
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+}
+
+body{
+  background-color: #FFEFD4;
+}
+
+
+.card{
+  width: 364px;
+  height: 464px;
+  border-radius: 20px;
+  background-image: url('../img/poster.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin: 64px auto;
+
+  &:hover{
+    box-shadow: 0px 8px 16px 0px rgba(110, 28, 13, 0.4);
+    background-size: 110%;
+
+    .card__content{
+      background: linear-gradient(180deg, rgba(34, 34, 34, 0.00) 0%, #222 100%);
+    }
+    .card__list{
+      display: table-column;
+    }
+  }
+
+  &__txt-director--bold, &__txt-users-rating--bold, &__txt-tag, &__txt-cast{
+    font-weight: 600;
+  }
+
+  &__wrp-director, &__stars, &__wrp-rating, &__wrp-user-rating, &__wrp-tag, &__wrp-caster{
+    display: inline-flex;
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 16px;
+  }
+
+  &__wrp-director{
+    gap: 4px;
+  }
+
+  &__wrp-rating{
+    gap: 8px;
+  } 
+
+  &__stars{
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+
+    img{
+      display: block;
+    }
+  }
+
+  &__wrp-user-rating{
+    gap: 4px;
+  }
+
+  &__txt-user-rating--transparent{
+    opacity: .7;
+  }
+
+  &__wrp-tag{
+    display: flex;
+    gap: 8px;
+  }
+
+  &__txt-tag{
+    padding: 4px 8px;
+    color: white;
+    border-radius: 4px;
+
+    &--history{
+      background-color: #DB4910;
+    }
+    &--drama{
+      background-color: #D87418;
+    }
+    &--thriller{
+      background-color: #DCA32B;
+    }
+  }
+
+
+  &__wrp-cast{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__wrp-caster{
+    gap: 8px;
+
+    img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #FFF;
+    }
+  }
+
+  &__list{
+    display: none;
+  }
+
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- link -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <main class="main">
+      <h1>SCSS Tabs</h1>
+      <section class="tab">
+        <nav class="tab__nav">
+          <label class="tab__menu" for="tab1">Short
+            <input type="radio" id="tab1" name="tab-group" checked>
+          </label>
+          <label class="tab__menu" for="tab2">Medium
+            <input type="radio" id="tab2" name="tab-group">
+          </label>
+          <label class="tab__menu" for="tab3">Short
+            <input type="radio" id="tab3" name="tab-group">
+          </label>
+        </nav>
+        <div class="tab__body">
+          <div class="tab__content">
+            <h2>Short Section</h2>
+            <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+          </div>
+          <div class="tab__content">
+            <h2>Medium Section</h2>
+            <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+          </div>
+          <div class="tab__content">
+            <h2>Long Section</h2>
+            <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+            <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script>
+    const tabInputs = document.querySelectorAll('input[name="tab-group"]');
+    const tabContents = document.querySelectorAll('.tab__content');
+
+    function showTabContent() {
+      tabContents.forEach(content => {
+        content.style.display = 'none';
+      });
+
+      const selectedTab = document.querySelector('input[name="tab-group"]:checked');
+      const index = Array.from(tabInputs).indexOf(selectedTab);
+      tabContents[index].style.display = 'flex'; // Menampilkan konten tab yang aktif
+    }
+
+    tabInputs.forEach(input => {
+      input.addEventListener('change', showTabContent);
+    });
+
+    showTabContent();
+  </script>
+</body>
+</html>

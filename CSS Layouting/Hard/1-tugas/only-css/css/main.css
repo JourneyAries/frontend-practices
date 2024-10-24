@@ -1,0 +1,89 @@
+:root {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1.28px;
+  color: #4F4F4F;
+}
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.8px;
+  color: #4F4F4F;
+}
+
+label {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.96px;
+  line-height: 28px;
+  color: rgba(79, 79, 79, 0.6);
+}
+
+body {
+  background-color: #ddd;
+}
+
+.container {
+  max-width: 1024px;
+  background-color: #E7E7E7;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+}
+.main h1 {
+  text-align: center;
+}
+
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FFF;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.tab:hover {
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.1);
+}
+.tab__radio {
+  display: none;
+}
+.tab__label {
+  cursor: pointer;
+  flex-grow: 1;
+  padding: 12px 0;
+  text-align: center;
+  background-color: rgb(242, 242, 242);
+}
+.tab__label:hover {
+  background-color: rgb(249, 249, 249);
+}
+.tab__content {
+  order: 1;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+}
+.tab__radio:checked + .tab__label {
+  background-color: white;
+  color: #4F4F4F;
+  font-weight: 700;
+}
+.tab__radio:checked + .tab__label + .tab__content {
+  display: flex;
+}
+
+/*# sourceMappingURL=main.css.map */

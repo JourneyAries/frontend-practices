@@ -46,6 +46,21 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* custom adding reset */
+
+a{
+	text-decoration: none;
+}
+
+img{
+	display: block;
+}
+
 *{
 	box-sizing: border-box;
+}
+
+button{
+	border: none;
 }

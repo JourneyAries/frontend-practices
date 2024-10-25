@@ -3,13 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CSS Layouting/Hard/3</title>
 
   <!-- link -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  
+  <div class="container">
+    <div class="grid-container">
+      <!-- aside -->
+      <aside class="aside">
+        <div class="aside__header">
+          <a class="aside__btn-home" href="#">AdminHub</a>
+          <nav>
+            <ul class="aside__nav">
+              <li><a class="aside__btn-nav" href="#"><img src="icon/House.svg">Dashboard</a></li>
+              <li><a class="aside__btn-nav" href="#"><img src="icon/Archive.svg">Product</a></li>
+              <li><a class="aside__btn-nav" href="#"><img src="icon/ListDashes.svg">Order List</a></li>
+              <li><a class="aside__btn-nav" href="#"><img src="icon/Stack.svg">Stock</a></li>
+              <li><a class="aside__btn-nav" href="#"><img src="icon/Package.svg">Total Order</a></li>
+              <li><a class="aside__btn-nav" href="#"><img src="icon/Users.svg">Team</a></li>
+              <li><a class="aside__btn-nav" href="#"><img src="icon/ChatDots.svg">Messages</a></li>
+              <li><a class="aside__btn-nav" href="#"><img src="icon/GearSix.svg">Setting</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="aside__footer">
+            <a class="aside__btn-logout" href="#"><img src="icon/SignOut.svg">Logout</a>
+        </div>
+      </aside>
+      <!-- [END] aside -->
+
+      <!-- header -->
+      <header class="header">
+        <input class="header__btn-aside" type="checkbox" id="btn-aside">
+        <label class="header__lbl-aside" for="btn-aside"><img src="icon/List.svg"></label>
+        <div class="header__wrp-profile">
+          <p class="header__txt-profile">Red Shoes</p>
+          <img class="header__img-profile" src="img/1.png">
+        </div>
+      </header>
+      <!-- [END] header -->
+
+      <!-- main -->
+      <main class="main">
+        <div class="main__header">
+          <h1>Dashboard</h1>
+          <div class="main__action-header">
+            <ul class="main__breadcrumbs">
+              <li><a href="#">Dashboard</a></li>
+              <li><img src="icon/CaretRight.svg"></li>
+              <li><a class="main__breadcrumbs-active" href="#">Home</a></li>
+            </ul>
+            <button class="main__btn-download" href="#"><img src="icon/DownloadSimple.svg">Download PDF</button>
+          </div>
+        </div>
+        <div class="main__overview">
+            <div class="main__card-overview">
+              <img class="main__icon-overview main__icon-overview--new-order" src="icon/RowsPlusTop.svg">
+              <div class="main__txt-overview">
+                <h2>1020</h2>
+                <p>New Order</p>
+              </div>
+            </div>
+            <div class="main__card-overview main__card-overview--visitor">
+              <img class="main__icon-overview main__icon-overview--visitor" src="icon/Basket.svg">
+              <div class="main__txt-overview">
+                <h2>1020</h2>
+                <p>New Order</p>
+              </div>
+            </div>
+            <div class="main__card-overview main__card-overview--total-order">
+              <img class="main__icon-overview main__icon-overview--total-order" src="icon/Eyes.svg">
+              <div class="main__txt-overview">
+                <h2>1020</h2>
+                <p>New Order</p>
+              </div>
+            </div>
+            <div class="main__card-overview">
+              <img class="main__icon-overview main__icon-overview--total-profit" src="icon/MoneyWavy.svg">
+              <div class="main__txt-overview">
+                <h2>1020</h2>
+                <p>New Order</p>
+              </div>
+            </div>
+        </div>
+        <div class="main__section main__recent-order">
+          <h2>Recent Order</h2>
+          <table class="main__table">
+            <thead class="main__thead">
+              <tr>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Sales</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody class="main__tbody">
+              <tr>
+                <td>2 Jan 2021</td>
+                <td>Alex Doe</td>
+                <td>Delivered</td>
+                <td>$205.99</td>
+              </tr>
+              <tr>
+                <td>2 Jan 2021</td>
+                <td>Alex Doe</td>
+                <td>Delivered</td>
+                <td>$205.99</td>
+              </tr>
+              <tr>
+                <td>2 Jan 2021</td>
+                <td>Alex Doe</td>
+                <td>Delivered</td>
+                <td>$205.99</td>
+              </tr>
+              <tr>
+                <td>2 Jan 2021</td>
+                <td>Alex Doe</td>
+                <td>Delivered</td>
+                <td>$205.99</td>
+              </tr>
+              <tr>
+                <td>2 Jan 2021</td>
+                <td>Alex Doe</td>
+                <td>Delivered</td>
+                <td>$205.99</td>
+              </tr>
+              <tr>
+                <td>2 Jan 2021</td>
+                <td>Alex Doe</td>
+                <td>Delivered</td>
+                <td>$205.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="main__section main_top-selling">
+          <h2>Top Selling Product</h2>
+          <ul class="main__body-top-selling">
+            <li class="main__list-top-selling">
+              <div class="main__img-product">
+                <img src="img/1.png">
+                <p>Red Shoes</p>
+              </div>
+              <p class="main__txt-product">$1142</p>
+            </li>
+            <li class="main__list-top-selling">
+              <div class="main__img-product">
+                <img src="img/2.png">
+                <p>Pink Shoes</p>
+              </div>
+              <p class="main__txt-product">$1142</p>
+            </li>
+            <li class="main__list-top-selling">
+              <div class="main__img-product">
+                <img src="img/3.png">
+                <p>Green Shoes</p>
+              </div>
+              <p class="main__txt-product">$1142</p>
+            </li>
+            <li class="main__list-top-selling">
+              <div class="main__img-product">
+                <img src="img/4.png">
+                <p>Coral Shoes</p>
+              </div>
+              <p class="main__txt-product">$1142</p>
+            </li>
+            <li class="main__list-top-selling">
+              <div class="main__img-product">
+                <img src="img/5.png">
+                <p>Orange Shoes</p>
+              </div>
+              <p class="main__txt-product">$1142</p>
+            </li>
+            <li class="main__list-top-selling">
+              <div class="main__img-product">
+                <img src="img/6.png">
+                <p>White Shoes</p>
+              </div>
+              <p class="main__txt-product">$1142</p>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <!-- [END] main -->
+    </div>
+  </div>
 </body>
-</html>s
+</html>

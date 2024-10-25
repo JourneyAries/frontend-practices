@@ -311,3 +311,35 @@ body{
   // [END] Top selling
 }
 
+// breakpoint
+@media screen and (max-width:768px) {
+  .grid-container{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      'header'
+      'main';
+  }
+
+  .aside{
+    display: none;
+  }
+
+  .main__overview{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main{
+    grid-template-areas: 
+    'main__header'
+    'main__overview'
+    'main__recent-order'
+    'main__top-selling';
+    grid-template-columns: 1fr ;
+    gap: 16px;
+    width: 100%;
+  }
+}

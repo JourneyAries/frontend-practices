@@ -1,0 +1,75 @@
+:root {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+h1, p {
+  color: #342E38;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1.76px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.container {
+  max-width: 1024px;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 64px;
+  gap: 64px;
+}
+.team > * {
+  display: grid;
+}
+.team__header {
+  grid-template-rows: 1fr;
+  text-align: center;
+  justify-items: center;
+}
+.team__header p {
+  width: 420px;
+  opacity: 0.7;
+}
+.team__gallery {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 28px;
+  justify-content: center;
+}
+.team__card {
+  max-width: 400px;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.team__card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.team__text {
+  z-index: 2;
+  position: absolute;
+  padding: 12px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  bottom: 8px;
+  right: 8px;
+  left: 8px;
+}
+
+/*# sourceMappingURL=main.css.map */

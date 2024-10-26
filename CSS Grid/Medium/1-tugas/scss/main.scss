@@ -1,0 +1,102 @@
+:root{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+h1,span,button{
+  color: #342E38;
+}
+
+h2{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+body{
+  background-color: #3D4FA9;
+}
+
+.container{
+  width: fit-content;
+  margin: 64px auto;
+}
+
+.calendar{
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content auto min-content;
+  gap: 16px;
+  padding: 8px;
+  border-radius: 8px;
+
+  &__header{
+    display: grid;
+    grid-template-columns:min-content 1fr min-content;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__btn-previous, &__btn-next{
+    height: 32px;
+    width: 32px;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  &__body{
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: min-content repeat(5, 40px);
+    gap: 8px;
+  }
+
+  &__week{
+    text-align: center;
+  }
+
+  &__date{
+    padding: 8px;
+    color: rgba(52, 46, 56, 1);
+    border-radius: 8px;
+    border: 1px solid #F1F1F1;
+    background-color: transparent;
+
+    &:hover{
+      border: 1px solid rgba(31, 122, 253, 0.20);
+      background: rgba(31, 122, 253, 0.10);
+    }
+
+    &--current-day{
+      background-color: #1F7AFD;
+      color: white;
+      font-weight: 700;
+    }
+
+    &--faded{
+      background-color: transparent;
+      color: rgba(52, 46, 56, 0.2);
+    }
+  }
+
+  &__footer{
+    display: grid;
+    justify-content: end;
+    grid-template-columns: min-content min-content;
+  }
+
+  &__btn-cancel, &__btn-done{
+    padding: 8px 16px;
+    border-radius: 28px;
+  }
+
+  &__btn-cancel{
+    color: rgba(52, 46, 56, 0.7);
+    background-color: transparent;
+  }
+
+  &__btn-done{
+    color: white;
+    background-color: rgba(31, 122, 253, 1);
+  }
+}

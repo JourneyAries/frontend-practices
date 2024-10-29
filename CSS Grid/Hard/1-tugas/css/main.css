@@ -1,0 +1,138 @@
+:root {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  padding: 64px 32px;
+}
+
+.schedule {
+  display: grid;
+  grid-template-columns: 100px repeat(4, 1fr);
+  grid-template-rows: 20px repeat(8, 100px);
+  gap: 16px;
+}
+.schedule__track--1 {
+  grid-column: 2/3;
+}
+.schedule__track--2 {
+  grid-column: 3/4;
+}
+.schedule__track--3 {
+  grid-column: 4/5;
+}
+.schedule__track--4 {
+  grid-column: 5/6;
+}
+.schedule__time {
+  padding: 0px;
+}
+.schedule__time--1 {
+  grid-row: 2/3;
+}
+.schedule__time--2 {
+  grid-row: 3/4;
+}
+.schedule__time--3 {
+  grid-row: 4/span 2;
+}
+.schedule__time--4 {
+  grid-row: 6/7;
+}
+.schedule__time--5 {
+  grid-row: 7/8;
+}
+.schedule__time--6 {
+  grid-row: 8/span 2;
+}
+.schedule__timeline {
+  padding: 12px;
+  color: white;
+}
+.schedule__timeline--1-1 {
+  background-color: blue;
+}
+.schedule__timeline--2-1 {
+  background-color: green;
+}
+.schedule__timeline--3-1 {
+  background-color: purple;
+}
+.schedule__timeline--4-1 {
+  background-color: orange;
+}
+.schedule__timeline--1-2 {
+  background-color: blue;
+}
+.schedule__timeline--2-2 {
+  background-color: green;
+}
+.schedule__timeline--3-2 {
+  background-color: purple;
+}
+.schedule__timeline--4-2 {
+  background-color: orange;
+}
+.schedule__timeline--1-3 {
+  background-color: blue;
+}
+.schedule__timeline--2-3 {
+  background-color: green;
+}
+.schedule__timeline--3-3 {
+  background-color: purple;
+}
+.schedule__timeline--4-3 {
+  background-color: orange;
+}
+.schedule__timeline--1-1 {
+  grid-column: 2/3;
+  grid-row: 2/span 2;
+}
+.schedule__timeline--1-2 {
+  grid-column: 2/span 2;
+  grid-row: 4/span 2;
+}
+.schedule__timeline--1-3 {
+  grid-column: 2/3;
+  grid-row: 7/span 2;
+}
+.schedule__timeline--2-1 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.schedule__timeline--2-2 {
+  grid-column: 3/span 2;
+  grid-row: 7/8;
+}
+.schedule__timeline--2-3 {
+  grid-column: 3/4;
+  grid-row: 8/span 2;
+}
+.schedule__timeline--3-1 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.schedule__timeline--3-2 {
+  grid-column: 4/5;
+  grid-row: 3/span 2;
+}
+.schedule__timeline--3-3 {
+  grid-column: 4/5;
+  grid-row: 8/span 2;
+}
+.schedule__timeline--4-1 {
+  grid-column: 5/6;
+  grid-row: 2/span 4;
+}
+.schedule__timeline--4-2 {
+  grid-column: 5/6;
+  grid-row: 7/8;
+}
+.schedule__break {
+  background-color: gray;
+  grid-area: 6/2/7/6;
+}
+
+/*# sourceMappingURL=main.css.map */

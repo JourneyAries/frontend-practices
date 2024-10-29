@@ -1,15 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/main.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1 class="header__txt-heading">Dashboard</h1>
+				<div class="header__action">
+					<div class="header__wrp-primary">
+						<button class="header__button header__button--primary">
+              <img src="icon/Star.svg"/>
+						</button>
+						<button class="header__button header__button--primary">
+							<img src="icon/Users.svg"/>Team Visible
+						</button>
+						<div class="header__members">
+							<img class="header__avatar" src="img/1.png">
+							<img class="header__avatar" src="img/2.png">
+							<div class="header__avatar header__avatar--number">3</div>
+						</div>
+					</div>
+					<div class="header__wrp-secondary">
+						<button class="header__button header__button--secondary">
+							<img src="icon/DotsThree.svg">Show Menu
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="board">
+					<div class="board__header">
+						<h3 class="board__txt-heading">Backlog</h3>
+						<button class="board__btn board__btn--header"><img src="icon/DotsThree.svg"></button>
+					</div>
+					<div class="board__content">
+						<div class="board__section"><p>Data Analytic Podcast</p></div>
+						<div class="board__section"><p>PR Firm outreach</p></div>
+						<div class="board__section"><p>List of vendors for banquets</p></div>
+					</div>
+					<button class="board__btn board__btn--footer">
+						<img src="icon/Plus.svg">Recent Order
+					</button>
+				</div>
+				<div class="board">
+					<div class="board__header">
+						<h3 class="board__txt-heading">Up Next</h3>
+						<button class="board__btn board__btn--header"><img src="icon/DotsThree.svg"></button>
+					</div>
+					<div class="board__content">
+						<div class="board__section">
+							<div class="board__wrp-tag">
+								<h4 class="board__tag board__tag--remarket">Remarket</h4>
+							</div>
+							<p>Android App new lending page</p>
+						</div>
+						<div class="board__section"><p>Analytics</p></div>
+						<div class="board__section">
+							<div class="board__wrp-tag">
+								<h4 class="board__tag board__tag--remarket">Remarket</h4>
+								<h4 class="board__tag board__tag--partners">Partners</h4>
+							</div>
+							<p>Branding guidelines</p>
+						</div>
+					</div>
+					<button class="board__btn board__btn--footer">
+						<img src="icon/Plus.svg">Recent Order
+					</button>
+				</div>
+				<div class="board">
+					<div class="board__header">
+						<h3 class="board__txt-heading">In Progress</h3>
+						<button class="board__btn board__btn--header"><img src="icon/DotsThree.svg"></button>
+					</div>
+					<div class="board__content">
+						<div class="board__section">
+							<div class="board__wrp-tag">
+								<h4 class="board__tag board__tag--goverment">Goverment</h4>
+								<h4 class="board__tag board__tag--planning">Planning</h4>
+							</div>
+							<p>Going live with server deployment</p>
+						</div>
+						<div class="board__section"><p>Google Adwords list of referrers</p></div>
+						<div class="board__section"><p>Q3 Webinar Content Planning</p></div>
+					</div>
+					<button class="board__btn board__btn--footer">
+						<img src="icon/Plus.svg">Recent Order
+					</button>
+				</div>
+				<button class="board__btn board__btn--new-board">
+					<img src="icon/Plus.svg">
+					Add New Task Board
+				</button>
+			</div>
+		</div>
+	</body>
 </html>

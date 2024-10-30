@@ -49,42 +49,32 @@
 .schedule__timeline {
   padding: 12px;
   color: white;
+  border-radius: 4px;
+  box-shadow: 4px 4px 0px 0px #C6C6C6;
 }
-.schedule__timeline--1-1 {
-  background-color: blue;
+.schedule__timeline h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.8px;
+  position: relative;
+  margin-bottom: 2px;
+  display: inline-block;
 }
-.schedule__timeline--2-1 {
-  background-color: green;
+.schedule__timeline h4::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 1px;
+  left: 0;
+  width: 100%;
+  border-top: 1px dashed white;
 }
-.schedule__timeline--3-1 {
-  background-color: purple;
-}
-.schedule__timeline--4-1 {
-  background-color: orange;
-}
-.schedule__timeline--1-2 {
-  background-color: blue;
-}
-.schedule__timeline--2-2 {
-  background-color: green;
-}
-.schedule__timeline--3-2 {
-  background-color: purple;
-}
-.schedule__timeline--4-2 {
-  background-color: orange;
-}
-.schedule__timeline--1-3 {
-  background-color: blue;
-}
-.schedule__timeline--2-3 {
-  background-color: green;
-}
-.schedule__timeline--3-3 {
-  background-color: purple;
-}
-.schedule__timeline--4-3 {
-  background-color: orange;
+.schedule__timeline p {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.8px;
+  opacity: 0.9;
 }
 .schedule__timeline--1-1 {
   grid-column: 2/3;
@@ -130,9 +120,48 @@
   grid-column: 5/6;
   grid-row: 7/8;
 }
+.schedule__timeline--1-1 {
+  background-color: #1259B2;
+}
+.schedule__timeline--2-1 {
+  background-color: #687F00;
+}
+.schedule__timeline--3-1 {
+  background-color: #544D69;
+}
+.schedule__timeline--4-1 {
+  background-color: #C35500;
+}
+.schedule__timeline--1-2 {
+  background-color: #1259B2;
+}
+.schedule__timeline--2-2 {
+  background-color: #687F00;
+}
+.schedule__timeline--3-2 {
+  background-color: #544D69;
+}
+.schedule__timeline--4-2 {
+  background-color: #C35500;
+}
+.schedule__timeline--1-3 {
+  background-color: #1259B2;
+}
+.schedule__timeline--2-3 {
+  background-color: #687F00;
+}
+.schedule__timeline--3-3 {
+  background-color: #544D69;
+}
+.schedule__timeline--4-3 {
+  background-color: #C35500;
+}
 .schedule__break {
-  background-color: gray;
+  border-radius: 4px;
+  background-color: #CCCCCC;
   grid-area: 6/2/7/6;
+  display: grid;
+  place-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

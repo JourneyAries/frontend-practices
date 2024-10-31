@@ -24,7 +24,7 @@ function kelvinKeFahrenheit(kelvinDeg) {
 
 console.log(celciusKeFahrenheit(0));
 console.log(fahrenheitKeCelcius(0));
-console.log(celciusKeKelvin(2));
 console.log(kelvinKeCelcius(2));
+console.log(celciusKeKelvin(2));
 console.log(fahrenheitKeKelvin(2));
 console.log(kelvinKeFahrenheit(2));

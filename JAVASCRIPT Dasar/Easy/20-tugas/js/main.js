@@ -3,7 +3,13 @@
 //Contoh: getMiddleCharacter("test") mengembalikan "es".
 
 function getMiddleCharacter(str) {
-  str.charAt()
+  let middleChar = Math.floor(str.length / 2);
+
+  if (str.length % 2 == 0) {
+    return str.charAt(middleChar - 1) + str.charAt(middleChar);
+  } else {
+    return str.charAt(middleChar);
+  }
 }
 
 console.log(getMiddleCharacter("test"));

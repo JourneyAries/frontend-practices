@@ -1,13 +1,12 @@
-//2. Membalikkan String
-//Buat fungsi reverseString(str) yang menerima sebuah string dan mengembalikan string tersebut dalam urutan terbalik
-//Contoh: reverseString("hello") mengembalikan "olleh".
+//2. Menggunakan Array.prototype.map()
+//Buat fungsi doubleValues(arr) yang menerima array angka dan mengembalikan array baru di mana setiap elemen adalah hasil dari elemen asli dikali dua.
+//Contoh: doubleValues([1, 2, 3]) mengembalikan [2, 4, 6].
 
-function reverseString(str) {
-  let newStr = '';
-  for (let i = str.length - 1; i >= 0; i--){
-    newStr += str[i];
-  }
-  return newStr;
+
+function doubleValues(arr) {
+  return arr.map(function (num) {
+    return num * 2;
+  });
 }
 
-console.log(reverseString('hello'));
+console.log(doubleValues([1, 2, 3]));

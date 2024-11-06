@@ -1,19 +1,9 @@
-//20. Membuat Bilangan Faktorial
-//Buat fungsi factorial(num) yang menerima bilangan num dan mengembalikan faktorial dari angka tersebut.
-//Contoh: factorial(5) mengembalikan 120.
+//20. Menggunakan String.prototype.charAt()
+//Buat fungsi getMiddleCharacter(str) yang mengembalikan karakter di tengah str. Jika panjang str genap, kembalikan dua karakter tengah.
+//Contoh: getMiddleCharacter("test") mengembalikan "es".
 
-
-function factorial(num) {
-  let result = 1;
-  let process = '';
-  for (let i = num; i > 0; i--){
-    result *= i;
-    process += i;
-    if (i > 1) {
-      process += ' x ';
-    }
-  }
-  return `${num}! =  ${process} = ${result}`;
+function getMiddleCharacter(str) {
+  str.charAt()
 }
 
-console.log(factorial(5));
+console.log(getMiddleCharacter("test"));

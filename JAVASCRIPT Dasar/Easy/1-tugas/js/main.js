@@ -1,18 +1,14 @@
-// 1. Menjumlahkan Angka dari 1 hingga N
-// Buatlah fungsi sumToN(n) yang menerima satu parameter n dan mengembalikan jumlah dari semua angka dari 1 hingga n.
-// Contoh: sumToN(5) mengembalikan 15 (1 + 2 + 3 + 4 + 5).
+//1. Menggunakan String.prototype.includes()
+//Buat fungsi containsSubstring(str, substring) yang mengembalikan true jika substring terdapat dalam str, dan false jika tidak.
+//Contoh: containsSubstring("hello world", "world") mengembalikan true.
 
-function sumToN(value) {
-  let total = 0;
-  let prosesPenjumlahan = '';
-  for (let i = 1; i <= value; i++){
-    total += i;
-    prosesPenjumlahan += i;
-    if (i < value) { 
-      prosesPenjumlahan += ' + '
-    }
+
+function containsSubstring(str, substring) {
+  if (str.includes(substring)) {
+    return `"${substring}" ada di dalam string`;
+  } else {
+    return `tidak ada kata tersebut!`;
   }
-  return `${total} (${prosesPenjumlahan})`;
 }
 
-console.log(sumToN(5));
+console.log(containsSubstring('hello world', 'world'));

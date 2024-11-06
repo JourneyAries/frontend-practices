@@ -1,14 +1,9 @@
-//15. Menambahkan Elemen Baru di Awal Array
-//Buat fungsi prepend(arr, newElement) yang menerima array dan sebuah elemen baru, lalu mengembalikan array baru dengan elemen tersebut di awal array.
-//Contoh: prepend([2, 3, 4], 1) mengembalikan [1, 2, 3, 4].
+//15. Menggunakan Array.prototype.indexOf()
+//Buat fungsi findIndex(arr, value) yang mengembalikan indeks pertama dari value dalam arr, atau -1 jika value tidak ditemukan
+//Contoh: findIndex([1, 2, 3], 2) mengembalikan 1.
 
-
-function prepend(arr, newElement) { 
-  for (let i = arr.length; i > 0; i--){
-    arr[i] = arr[i - 1];
-  }
-  arr[0] = newElement;
-  return arr;
+function findIndex(arr, value) { 
+  return arr.indexOf(value);
 }
 
-console.log(prepend([2, 3, 4], 1));
+console.log(findIndex([1, 2, 3], 2));

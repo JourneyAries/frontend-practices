@@ -1,13 +1,9 @@
-//13. Menjumlahkan Elemen Array
-//Buat fungsi sumArray(arr) yang menerima array angka dan mengembalikan jumlah dari semua elemen dalam array
-//Contoh: sumArray([1, 2, 3, 4]) mengembalikan 10.
+//13. Menggunakan Math.max() dan Math.min()
+//Buat fungsi findMaxMin(arr) yang mengembalikan objek { max, min } dengan nilai maksimum dan minimum dari array arr.
+//Contoh: findMaxMin([3, 5, 1, 8]) mengembalikan { max: 8, min: 1 }.
 
-function sumArray(arr) {
-  let total = 0;
-  for (let i = 0; i < arr.length; i++){
-    total += arr[i];
-  }
-  return total;
+function findMaxMin(arr) {
+  return `max: ${Math.max(...arr)} min: ${Math.min(...arr)}`;
 }
 
-console.log(sumArray([1, 2, 3, 4]));
+console.log(findMaxMin([3, 5, 1, 8]));

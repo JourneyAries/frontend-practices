@@ -1,23 +1,10 @@
-//6. Memeriksa Bilangan Prima
-//Buat fungsi isPrime(num) yang mengembalikan true jika bilangan tersebut adalah bilangan prima, dan false jika bukan.
-//Contoh: isPrime(7) mengembalikan true.
+//6. Menggunakan Array.prototype.reduce()
+//Buat fungsi sumArray(arr) yang mengembalikan jumlah dari semua elemen dalam array arr.
+//Contoh: sumArray([1, 2, 3, 4]) mengembalikan 10.
 
-function isPrime(num) {
-  //bilangan yang hanya bisa di bagi oleh bilangan itu sendiri
-  let newNum = '';
-  for (let i = 0; i <= num; i++) {
-    if (num % i === 0) {
-      newNum += i;
-      if (i < num) {
-        newNum += ', ';
-      }
-    }
-  }
-  if (newNum.split(', ').length === 2) {
-    return `bilangan tersebut prima! - [${newNum}]`;
-  } else {
-    return `bilangan tersebut BUKAN prima! - [${newNum}]`;
-  }
+function sumArray(arr) {
+  return arr.reduce(
+    (accumulator, currentValue) => accumulator + currentValue);
 }
 
-console.log(isPrime(5));
+console.log(sumArray([1, 2, 3, 4]));

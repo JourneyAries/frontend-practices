@@ -1,9 +1,12 @@
-//4. Menemukan Bilangan Ganjil dan Genap
-//Buat fungsi oddOrEven(num) yang menerima sebuah bilangan bulat dan mengembalikan string "odd" jika bilangan tersebut ganjil dan "even" jika bilangan tersebut genap.
-//Contoh: oddOrEven(3) mengembalikan "odd".
+//4. Menggunakan Array.prototype.filter()
+//Buat fungsi filterOddNumbers(arr) yang mengembalikan array yang hanya berisi angka ganjil dari array arr.
+//Contoh: filterOddNumbers([1, 2, 3, 4, 5]) mengembalikan [1, 3, 5].
 
-function oddOrEven(value) {
-  return value % 2 == 0? "even" : "odd";
+
+function filterOddNumbers(arr) {
+  return arr.filter(function (num) {
+    return num % 2 !== 0;
+  })
 }
 
-console.log(oddOrEven(3));
+console.log(filterOddNumbers([1, 2, 3, 4, 5]));

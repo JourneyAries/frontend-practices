@@ -1,21 +1,9 @@
-//10. Mencari Nilai Maksimum dan Minimum dalam Array
-//Buat fungsi findMinMax(arr) yang mengembalikan objek dengan nilai maksimum dan minimum dari array angka yang diberikan
-//Contoh: findMinMax([3, 7, 2, 8]) mengembalikan { min: 2, max: 8 }.
+//10. Menggunakan Array.prototype.find()
+//Buat fungsi findFirstEven(arr) yang mengembalikan bilangan genap pertama dalam array arr.
+//Contoh: findFirstEven([1, 3, 4, 6]) mengembalikan 4.
 
-
-function findMinMax(arr) {
-  let min = arr[0];
-  let max = arr[0];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] < min) {
-      min = arr[i];
-    }
-    if (arr[i] > max) {
-      max = arr[i];
-    }
-  }
-
-  return `min: ${min} max: ${max}`;
+function findFirstEven(arr) {
+  return arr.find(num => num % 2 == 0);
 }
 
-console.log(findMinMax([3, 7, 2, 8]));
+console.log(findFirstEven([1, 3, 4, 6]));

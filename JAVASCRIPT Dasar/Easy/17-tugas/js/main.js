@@ -1,14 +1,9 @@
-//17. Mengecek Palindrome
-//Buat fungsi isPalindrome(str) yang mengembalikan true jika string tersebut adalah palindrome (sama jika dibaca dari depan dan belakang), dan false jika tidak.
-//Contoh: isPalindrome("madam") mengembalikan true.
+//17. Menggunakan Math.random()
+//Buat fungsi randomInteger(max) yang menghasilkan bilangan bulat acak dari 0 hingga max.
+//Contoh: randomInteger(5) bisa mengembalikan angka antara 0 hingga 5.
 
-function isPalindrom(str) { 
-  for (let i = 0; i < str.length / 2; i++){
-    if (str[i] !== str[str.length - 1 - i]) {
-      return false;
-    }
-  }
-  return true;
+function randomInteger(max) {
+  return Math.floor(Math.random()*max);
 }
 
-console.log(isPalindrom('113321'));
+console.log(randomInteger(5));

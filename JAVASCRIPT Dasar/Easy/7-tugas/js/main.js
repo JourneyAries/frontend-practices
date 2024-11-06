@@ -1,18 +1,10 @@
-//7. Menghapus Angka Duplikat dari Array
-//Buat fungsi removeDuplicates(arr) yang menerima array angka dan mengembalikan array tanpa angka yang duplikat.
-//Contoh: removeDuplicates([1, 2, 2, 3, 4, 4, 5]) mengembalikan [1, 2, 3, 4, 5].
+//7. Menggunakan String.prototype.replace()
+//Buat fungsi replaceSpaces(str) yang mengubah semua spasi dalam str menjadi karakter "-".
+//Contoh: replaceSpaces("hello world") mengembalikan "hello-world".
 
-function removeDuplicates(arr) {
-  let newArr = '';
-  for (let i = 0; i < arr.length; i++){
-    if (!newArr.includes(arr[i])) {
-      newArr += arr[i];
-      if (i < arr.length - 1) {
-        newArr += ', ';
-      }
-    }
-  }
-  return `[${newArr}]`;
+
+function replaceSpaces(str) {
+  return str.replace(' ', '-');
 }
 
-console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
+console.log(replaceSpaces("hello world"));

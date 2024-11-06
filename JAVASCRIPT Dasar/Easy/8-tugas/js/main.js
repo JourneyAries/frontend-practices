@@ -1,10 +1,9 @@
-//8. Menghitung Pangkat Dua
-//Buat fungsi square(num) yang menerima angka num dan mengembalikan hasil kuadrat dari angka tersebut.
-//Contoh: square(4) mengembalikan 16.
+//8. Menggunakan Array.prototype.some()
+//Buat fungsi containsNegative(arr) yang mengembalikan true jika terdapat bilangan negatif dalam array arr, dan false jika tidak.
+//Contoh: containsNegative([1, -2, 3]) mengembalikan true.
 
-
-function square(num) {
-  return num * num;
+function containsNegative(arr) {
+  return arr.some(num => num < 0);
 }
 
-console.log(square(4));
+console.log(containsNegative([1, -2, 3]));

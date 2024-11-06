@@ -1,15 +1,9 @@
-//3. Menghitung Vokal dalam Strin
-//Buat fungsi countVowels(str) yang menerima sebuah string dan mengembalikan jumlah huruf vokal (a, e, i, o, u) dalam string tersebut.
-//Contoh: countVowels("javascript") mengembalikan 3.
+//3. Menggunakan String.prototype.toUpperCase()
+//Buat fungsi capitalize(str) yang mengubah semua huruf dalam str menjadi huruf kapital.
+//Contoh: capitalize("hello") mengembalikan "HELLO".
 
-function countVowels(str) {
-  let totalVowels = 0;
-  for (let i = 0; i < str.length; i++){
-    if (str[i] == 'a' || str[i] == 'i' || str[i] == 'u' || str[i] == 'e' || str[i] == 'o'){
-      totalVowels++;
-    }
-  }
-  return totalVowels;
+function capitalize(str) {
+  return str.toUpperCase();
 }
 
-console.log(countVowels('javascript'));
+console.log(capitalize('hello'));

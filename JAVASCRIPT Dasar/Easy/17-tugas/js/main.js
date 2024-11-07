@@ -1,9 +1,9 @@
-//17. Menggunakan Math.random()
-//Buat fungsi randomInteger(max) yang menghasilkan bilangan bulat acak dari 0 hingga max.
-//Contoh: randomInteger(5) bisa mengembalikan angka antara 0 hingga 5.
+//17. Menggunakan String.prototype.lastIndexOf()
+//Buat fungsi lastOccurrence(str, char) yang mengembalikan indeks terakhir dari char dalam str, atau -1 jika tidak ditemukan.
+//Contoh: lastOccurrence("hello world", "o") mengembalikan 7.
 
-function randomInteger(max) {
-  return Math.floor(Math.random()*max);
+function lastOccurrence(str, char) {
+  return str.lastIndexOf(char)
 }
 
-console.log(randomInteger(5));
+console.log(lastOccurrence("hello world", "o"));

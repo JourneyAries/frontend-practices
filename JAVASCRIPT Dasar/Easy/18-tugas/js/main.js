@@ -1,11 +1,9 @@
-//18. Menggunakan Array.prototype.splice()
-//Buat fungsi removeElements(arr, start, count) yang menghapus count elemen dari arr mulai dari indeks start.
-//Contoh: removeElements([1, 2, 3, 4], 1, 2) mengembalikan [1, 4].
+//18. Menggunakan String.prototype.repeat()
+//Buat fungsi repeatCharacter(char, times) yang mengembalikan char diulang sebanyak times.
+//Contoh: repeatCharacter("*", 5) mengembalikan "*****".
 
-function removeElements(arr, start, count) {
-  arr.splice(start, count);
-  return arr;
+function repeatCharacter(char, times) {
+  return char.repeat(times);
 }
 
-console.log(removeElements([1, 2, 3, 4], 1, 2));
-
+console.log(repeatCharacter('*', 5));

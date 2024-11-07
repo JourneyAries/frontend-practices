@@ -1,12 +1,9 @@
-//4. Menggunakan Array.prototype.filter()
-//Buat fungsi filterOddNumbers(arr) yang mengembalikan array yang hanya berisi angka ganjil dari array arr.
-//Contoh: filterOddNumbers([1, 2, 3, 4, 5]) mengembalikan [1, 3, 5].
+//4. Menggunakan Number.isInteger()
+//Buat fungsi isInteger(num) yang mengembalikan true jika num adalah bilangan bulat, dan false jika tidak.
+//Contoh: isInteger(4.5) mengembalikan false.
 
-
-function filterOddNumbers(arr) {
-  return arr.filter(function (num) {
-    return num % 2 !== 0;
-  })
+function isInteger(num) {
+  return Number.isInteger(num);
 }
 
-console.log(filterOddNumbers([1, 2, 3, 4, 5]));
+console.log(isInteger(4.5));

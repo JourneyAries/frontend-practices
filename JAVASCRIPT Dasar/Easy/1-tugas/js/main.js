@@ -1,14 +1,9 @@
-//1. Menggunakan String.prototype.includes()
-//Buat fungsi containsSubstring(str, substring) yang mengembalikan true jika substring terdapat dalam str, dan false jika tidak.
-//Contoh: containsSubstring("hello world", "world") mengembalikan true.
+//1. Menggunakan String.prototype.endsWith()
+//Buat fungsi endsWithSubstring(str, substring) yang mengembalikan true jika str diakhiri dengan substring, dan false jika tidak.
+//Contoh: endsWithSubstring("javascript", "script") mengembalikan true.
 
-
-function containsSubstring(str, substring) {
-  if (str.includes(substring)) {
-    return `"${substring}" ada di dalam string`;
-  } else {
-    return `tidak ada kata tersebut!`;
-  }
+function endsWithSubstring(str, substring) {
+  return str.endsWith(substring);
 }
 
-console.log(containsSubstring('hello world', 'world'));
+console.log(endsWithSubstring("javascript", "script"));

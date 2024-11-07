@@ -1,9 +1,9 @@
-//19. Menggunakan Array.prototype.slice()
-//Buat fungsi getFirstNElements(arr, n) yang mengembalikan array berisi n elemen pertama dari array arr.
-//Contoh: getFirstNElements([1, 2, 3, 4], 2) mengembalikan [1, 2].
+//19. Menggunakan Array.prototype.findIndex()
+//Buat fungsi indexOfNegative(arr) yang mengembalikan indeks pertama dari bilangan negatif dalam array arr, atau -1 jika tidak ada.
+//Contoh: indexOfNegative([1, 2, -3, 4]) mengembalikan 2.
 
-function getFirstNElements(arr, n) {
-  return arr.slice(0,n);
+function indexOfNegative(arr) {
+  return arr.findIndex(num => num < 0);
 }
 
-console.log(getFirstNElements([1, 2, 3, 4], 2));
+console.log(indexOfNegative([1, 2, -3, 4]));

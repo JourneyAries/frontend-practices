@@ -1,9 +1,9 @@
-//5. Menggunakan String.prototype.split() dan Array.prototype.reverse()
-//Buat fungsi reverseWords(str) yang menerima kalimat str dan membalik urutan kata dalam kalimat tersebut.
-//Contoh: reverseWords("I love coding") mengembalikan "coding love I".
+//5. Menggunakan Array.prototype.fill()
+//Buat fungsi fillArray(value, length) yang mengembalikan array berisi length elemen yang semuanya memiliki nilai value.
+//Contoh: fillArray(3, 4) mengembalikan [3, 3, 3, 3].
 
-function reverseWords(str) {
-  return str.split(' ').reverse().join(' ');
+function fillArray(value, length) {
+  return Array(length).fill(value);
 }
 
-console.log(reverseWords("I love coding"));
+console.log(fillArray(3, 4));

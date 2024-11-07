@@ -1,9 +1,9 @@
-//21. Menggunakan Array.prototype.includes()
-//Buat fungsi hasValue(arr, value) yang mengembalikan true jika value terdapat dalam arr, dan false jika tidak.
-//Contoh: hasValue([1, 2, 3], 2) mengembalikan true.
+//21. Menggunakan String.prototype.toLowerCase()
+//Buat fungsi toLowerCase(str) yang mengubah semua huruf dalam str menjadi huruf kecil.
+//Contoh: toLowerCase("HELLO") mengembalikan "hello".
 
-function hasValue(arr, value) {
-  return arr.includes(value);
+function toLowerCase(str) {
+  return str.toLowerCase();
 }
 
-console.log(hasValue([1, 2, 3], 2));
+console.log(toLowerCase("HELLO"));

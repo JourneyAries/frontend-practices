@@ -1,9 +1,10 @@
-//13. Menggunakan Math.max() dan Math.min()
-//Buat fungsi findMaxMin(arr) yang mengembalikan objek { max, min } dengan nilai maksimum dan minimum dari array arr.
-//Contoh: findMaxMin([3, 5, 1, 8]) mengembalikan { max: 8, min: 1 }.
+//13. Menggunakan Array.prototype.unshift()
+//Buat fungsi addToFront(arr, value) yang menambahkan value di awal array arr dan mengembalikan panjang array baru.
+//Contoh: addToFront([2, 3], 1) mengembalikan 3.
 
-function findMaxMin(arr) {
-  return `max: ${Math.max(...arr)} min: ${Math.min(...arr)}`;
+function addToFront(arr, value) {
+  arr.unshift(value)
+  return arr.length;
 }
 
-console.log(findMaxMin([3, 5, 1, 8]));
+console.log(addToFront([2, 3], 1));

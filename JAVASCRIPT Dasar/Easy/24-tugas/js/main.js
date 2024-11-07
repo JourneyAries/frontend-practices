@@ -1,9 +1,10 @@
-//24. Menggunakan Array.prototype.flat()
-//Buat fungsi flattenArray(arr) yang menerima array bersarang (nested array) dan mengembalikan array dalam bentuk satu dimensi.
-//Contoh: flattenArray([1, [2, 3], [4, [5]]]) mengembalikan [1, 2, 3, 4, 5].
+//24: Menghitung Jumlah Angka Positif dalam Array Menggunakan filter()
+//Buat fungsi countPositiveNumbers(arr) yang menghitung jumlah angka positif dalam array menggunakan filter().
+//countPositiveNumbers([1, -2, 3, 4, -5]);  // Output: 3
 
-function flattenArray(arr) {
-  return arr.flat().flat();
+
+function countPositiveNumbers(arr) {
+  return arr.filter(num => num > 0).length;
 }
 
-console.log(flattenArray([1, [2, 3], [4, [5]]]));
+console.log(countPositiveNumbers([1, -2, 3, 4, -5]));

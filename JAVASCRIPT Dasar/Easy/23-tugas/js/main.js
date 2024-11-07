@@ -1,9 +1,9 @@
-//23. Menggunakan Math.ceil() dan Math.floor()
-//Buat fungsi roundNumber(num) yang mengembalikan objek dengan hasil pembulatan ke atas, ke bawah, dan ke angka terdekat dari num.
-//Contoh: roundNumber(4.6) mengembalikan { ceil: 5, floor: 4, round: 5 }.
+//23. Menggunakan String.prototype.split() dan Array.prototype.length
+//Buat fungsi wordCount(str) yang menghitung jumlah kata dalam str berdasarkan spasi.
+//Contoh: wordCount("I love coding") mengembalikan 3.
 
-function roundNumber(num) {
-  return `ceil: ${Math.ceil(num)}, floor: ${Math.floor(num)}, round: ${Math.round(num)}`;
+function wordCount(str) {
+  return str.split(' ').length;
 }
 
-console.log(roundNumber(4.6));
+console.log(wordCount("I love coding"));

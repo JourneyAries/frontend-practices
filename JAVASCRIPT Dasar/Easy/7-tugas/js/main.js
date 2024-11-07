@@ -1,10 +1,9 @@
-//7. Menggunakan String.prototype.replace()
-//Buat fungsi replaceSpaces(str) yang mengubah semua spasi dalam str menjadi karakter "-".
-//Contoh: replaceSpaces("hello world") mengembalikan "hello-world".
+//7. Menggunakan Math.sqrt()
+//Buat fungsi calculateSquareRoot(num) yang mengembalikan akar kuadrat dari num.
+//Contoh: calculateSquareRoot(16) mengembalikan 4.
 
-
-function replaceSpaces(str) {
-  return str.replace(' ', '-');
+function calculateSquareRoot(num) {
+  return Math.sqrt(num)
 }
 
-console.log(replaceSpaces("hello world"));
+console.log(calculateSquareRoot(16));

@@ -1,12 +1,9 @@
-//2. Menggunakan Array.prototype.map()
-//Buat fungsi doubleValues(arr) yang menerima array angka dan mengembalikan array baru di mana setiap elemen adalah hasil dari elemen asli dikali dua.
-//Contoh: doubleValues([1, 2, 3]) mengembalikan [2, 4, 6].
+//2. Menggunakan Math.pow()
+//Buat fungsi power(base, exponent) yang mengembalikan hasil dari base pangkat exponent.
+//Contoh: power(2, 3) mengembalikan 8.
 
-
-function doubleValues(arr) {
-  return arr.map(function (num) {
-    return num * 2;
-  });
+function power(base, exponent) {
+  return Math.pow(base, exponent);
 }
 
-console.log(doubleValues([1, 2, 3]));
+console.log(power(2, 3));

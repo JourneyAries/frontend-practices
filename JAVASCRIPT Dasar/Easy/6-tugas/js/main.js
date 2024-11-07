@@ -1,10 +1,9 @@
-//6. Menggunakan Array.prototype.reduce()
-//Buat fungsi sumArray(arr) yang mengembalikan jumlah dari semua elemen dalam array arr.
-//Contoh: sumArray([1, 2, 3, 4]) mengembalikan 10.
+//6. Menggunakan String.prototype.indexOf()
+//Buat fungsi firstOccurrence(str, char) yang mengembalikan indeks pertama dari char dalam str, atau -1 jika karakter tidak ditemukan.
+//Contoh: firstOccurrence("hello", "e") mengembalikan 1.
 
-function sumArray(arr) {
-  return arr.reduce(
-    (accumulator, currentValue) => accumulator + currentValue);
+function firstOccurrence(str, char) {
+  return str.indexOf(char);
 }
 
-console.log(sumArray([1, 2, 3, 4]));
+console.log(firstOccurrence("hello", "e"));

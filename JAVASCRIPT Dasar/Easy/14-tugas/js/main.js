@@ -1,9 +1,9 @@
-//14. Menggunakan Array.prototype.concat()
-//Buat fungsi mergeArrays(arr1, arr2) yang menggabungkan dua array arr1 dan arr2 menjadi satu array.
-//Contoh: mergeArrays([1, 2], [3, 4]) mengembalikan [1, 2, 3, 4].
+//14. Menggunakan Array.prototype.flatMap()
+//Buat fungsi doubleAndFlatten(arr) yang menerima array bersarang (nested array) dan mengembalikan array satu dimensi di mana setiap elemen di dalamnya dikalikan dua.
+//Contoh: doubleAndFlatten([1, [2, 3], 4]) mengembalikan [2, 4, 6, 8].
 
-function mergeArrays(arr1, arr2) {
-  return arr1.concat(arr2);
+function doubleAndFlatten(arr) {
+  return arr.flatMap(num => Array.isArray(num) ? num.map(n => n * 2) : num * 2);
 }
 
-console.log(mergeArrays([1, 2], [3, 4]));
+console.log(doubleAndFlatten([1, [2, 3], 4]));

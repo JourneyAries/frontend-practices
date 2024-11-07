@@ -1,9 +1,8 @@
-//16. Menggunakan Array.prototype.join()
-//Buat fungsi joinWords(arr) yang menggabungkan array arr menjadi string dengan kata-kata dipisahkan oleh spasi.
-//Contoh: joinWords(["hello", "world"]) mengembalikan "hello world".
+//16. Menggunakan Math.abs()
+//Buat fungsi absoluteDifference(a, b) yang mengembalikan selisih absolut antara dua angka a dan b.
+//Contoh: absoluteDifference(5, 8) mengembalikan 3.
 
-function joinWords(arr) {
-  return arr.join(" ");
+function absoluteDifference(a, b) {
+  return Math.abs(a -b);
 }
-
-console.log(joinWords(["hello", "world"]));
+console.log(absoluteDifference(5, 8));

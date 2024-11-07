@@ -1,9 +1,9 @@
-//12. Menggunakan String.prototype.startsWith()
-//Buat fungsi startsWithVowel(word) yang mengembalikan true jika kata word dimulai dengan huruf vokal (a, e, i, o, u), dan false jika tidak.
-//Contoh: startsWithVowel("apple") mengembalikan true.
+//12. Menggunakan Array.prototype.pop()
+//Buat fungsi removeLastElement(arr) yang menghapus elemen terakhir dari arr dan mengembalikan elemen yang dihapus tersebut.
+//Contoh: removeLastElement([1, 2, 3]) mengembalikan 3.
 
-function startsWithVowel(word) {
-  return word.startsWith('a', 'i', 'u', 'e', 'o') ? true : false;  
+function removeLastElement(arr) {
+  return arr.pop();
 }
 
-console.log(startsWithVowel("apple"));
+console.log(removeLastElement([1, 2, 3]));

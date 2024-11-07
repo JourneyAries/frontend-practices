@@ -1,10 +1,9 @@
-//9. Menggunakan Array.prototype.every()
-//Buat fungsi allPositive(arr) yang mengembalikan true jika semua angka dalam array arr adalah positif, dan false jika ada angka negatif.
-//Contoh: allPositive([1, 2, 3]) mengembalikan true.
+//9. Menggunakan String.prototype.padEnd()
+//Buat fungsi padStringRight(str, length, char) yang menambahkan char di akhir str hingga mencapai panjang length
+//Contoh: padStringRight("abc", 5, "-") mengembalikan "abc--".
 
-
-function allPositive(arr) {
-  return arr.every(sum => sum > 0);
+function padStringRight(str, length, char) {
+  return str.padEnd(length, char)
 }
 
-console.log(allPositive([1, 2, 3]));
+console.log(padStringRight("abc", 5, "-"));

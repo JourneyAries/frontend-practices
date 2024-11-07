@@ -1,9 +1,9 @@
-//22. Menggunakan String.prototype.trim()
-//Buat fungsi trimSpaces(str) yang menghapus spasi di awal dan akhir str.
-//Contoh: trimSpaces(" hello world ") mengembalikan "hello world".
+//22. Menggunakan Array.prototype.reduceRight()
+//Buat fungsi multiplyArray(arr) yang mengalikan semua elemen dalam array arr dari kanan ke kiri.
+//Contoh: multiplyArray([1, 2, 3, 4]) mengembalikan 24.
 
-function trimSpaces(str) {
-  return str.trim(' ');
+function multiplyArray(arr) {
+  return arr.reduceRight((accumulator, currentValue) => accumulator * currentValue);
 }
 
-console.log(trimSpaces(" hello world "));
+console.log(multiplyArray([1, 2, 3, 4]));

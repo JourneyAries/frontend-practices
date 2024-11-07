@@ -1,9 +1,9 @@
-//25. Menggunakan String.prototype.repeat()
-//Buat fungsi repeatString(str, count) yang mengembalikan string str yang diulang sebanyak count kali.
-//Contoh: repeatString("ha", 3) mengembalikan "hahaha".
+//25: Mencari Elemen yang Tidak Ada di Array Lain Menggunakan filter() dan includes()
+//Buat fungsi findUniqueElements(arr1, arr2) yang mengembalikan elemen-elemen yang ada di arr1 tetapi tidak ada di arr2 menggunakan filter() dan includes().
+//findUniqueElements([1, 2, 3, 4], [3, 4, 5, 6]);  // Output: [1, 2]
 
-function repeatString(str, count) {
-  return str.repeat(3);
+function findUniqueElements(arr1, arr2) {
+  return arr1.filter(item => !arr2.includes(item));
 }
 
-console.log(repeatString("ha", 3));
+console.log(findUniqueElements([1, 2, 3, 4], [3, 4, 5, 6]));

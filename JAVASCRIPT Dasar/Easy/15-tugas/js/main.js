@@ -1,9 +1,10 @@
-//15. Menggunakan Array.prototype.indexOf()
-//Buat fungsi findIndex(arr, value) yang mengembalikan indeks pertama dari value dalam arr, atau -1 jika value tidak ditemukan
-//Contoh: findIndex([1, 2, 3], 2) mengembalikan 1.
+//15. Menggunakan String.prototype.match()
+//Buat fungsi findAllVowels(str) yang mengembalikan array semua huruf vokal dalam string str.
+//Contoh: findAllVowels("hello world") mengembalikan ["e", "o", "o"].
 
-function findIndex(arr, value) { 
-  return arr.indexOf(value);
+function findAllVowels(str) {
+  const vowels = str.match(/[aeiou]/gi);
+  return vowels || [];
 }
 
-console.log(findIndex([1, 2, 3], 2));
+console.log(findAllVowels("hello world"));

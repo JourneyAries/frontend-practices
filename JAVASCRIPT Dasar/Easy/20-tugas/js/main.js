@@ -1,15 +1,9 @@
-//20. Menggunakan String.prototype.charAt()
-//Buat fungsi getMiddleCharacter(str) yang mengembalikan karakter di tengah str. Jika panjang str genap, kembalikan dua karakter tengah.
-//Contoh: getMiddleCharacter("test") mengembalikan "es".
+//20. Menggunakan String.prototype.slice()
+//Buat fungsi removeFirstAndLast(str) yang mengembalikan string str tanpa karakter pertama dan terakhirnya.
+//Contoh: removeFirstAndLast("hello") mengembalikan "ell".
 
-function getMiddleCharacter(str) {
-  let middleChar = Math.floor(str.length / 2);
-
-  if (str.length % 2 == 0) {
-    return str.charAt(middleChar - 1) + str.charAt(middleChar);
-  } else {
-    return str.charAt(middleChar);
-  }
+function removeFirstAndLast(str) {
+  return str.slice(1, str.length - 1);
 }
 
-console.log(getMiddleCharacter("test"));
+console.log(removeFirstAndLast("hello"));

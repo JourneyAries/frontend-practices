@@ -1,9 +1,9 @@
-//3. Menggunakan String.prototype.toUpperCase()
-//Buat fungsi capitalize(str) yang mengubah semua huruf dalam str menjadi huruf kapital.
-//Contoh: capitalize("hello") mengembalikan "HELLO".
+//3. Menggunakan String.prototype.substring()
+//Buat fungsi getSubstring(str, start, end) yang mengembalikan bagian dari str mulai dari indeks start hingga end (tidak termasuk end).
+//Contoh: getSubstring("javascript", 0, 4) mengembalikan "java".
 
-function capitalize(str) {
-  return str.toUpperCase();
+function getSubstring(str, start, end) {
+  return str.substring(start, end)
 }
 
-console.log(capitalize('hello'));
+console.log(getSubstring("javascript", 0, 4));

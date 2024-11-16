@@ -1,4 +1,4 @@
-//23. Filter Bilangan Positif dari Array
+//24. Filter Bilangan Positif dari Array
 //Fungsi: filterPositiveNumbers(arr)
 //Parameter: arr (array of integers)
 //Hint: Gunakan kondisi arr[i] > 0.

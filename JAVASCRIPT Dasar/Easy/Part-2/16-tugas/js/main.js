@@ -13,7 +13,12 @@ function reverseArray1(arr) {
 function reverseArray2(arr) {
   let reverse = [];
 
-  
+  for (let i = arr.length -1; i >= 0; i--){
+    reverse.push(arr[i]);
+  }
+
+  return reverse;
 }
 
 console.log(reverseArray1([1, 2, 3]));
+console.log(reverseArray2([1, 2, 3]));

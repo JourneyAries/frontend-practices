@@ -20,8 +20,6 @@ function numberToArray3(num) {
 }
 
 
-
-
 console.log(numberToArray1(123));
 console.log(numberToArray2(123));
 console.log(numberToArray3(123));

@@ -28,7 +28,7 @@ function sumArray3(arr) {
   return result;
 }
 
-//for..off
+//for..of
 function sumArray4(arr) {
   let result = 0;
   for (const e of arr) {
@@ -48,7 +48,7 @@ function sumArray5(arr) {
   }
 }
 
-console.log(sumArray1([1,2,3]));
-console.log(sumArray2([1,2,3]));
-console.log(sumArray3([1,2,3]));
-console.log(sumArray4([1,2,3]));
+console.log(sumArray1([1,2,3])); //Ouput: 6
+console.log(sumArray2([1,2,3])); //Ouput: 6
+console.log(sumArray3([1,2,3])); //Ouput: 6
+console.log(sumArray4([1,2,3])); //Ouput: 6

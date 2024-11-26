@@ -8,4 +8,4 @@ function isOddOrEven(num) {
   return num % 2 !== 0 ? 'ganjil' : 'genap';
 }
 
-console.log(isOddOrEven(3));
+console.log(isOddOrEven(3)); // Output: 'ganjil'

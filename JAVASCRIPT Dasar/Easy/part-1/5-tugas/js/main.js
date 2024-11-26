@@ -35,7 +35,7 @@ function reverseString4(str) {
   return [...str].reverse().join('');
 }
 
-console.log(reverseString1('hello'));
-console.log(reverseString2('hello'));
-console.log(reverseString3('hello'));
-console.log(reverseString4('hello'));
+console.log(reverseString1('hello')); //Output: 'olleh'
+console.log(reverseString2('hello')); //Output: 'olleh'
+console.log(reverseString3('hello')); //Output: 'olleh'
+console.log(reverseString4('hello')); //Output: 'olleh'

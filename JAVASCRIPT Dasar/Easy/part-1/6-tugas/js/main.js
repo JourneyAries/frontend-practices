@@ -26,7 +26,7 @@ function countVowels2(str) {
   return counter;
 }
 
-//for in  
+//for of
 function countVowels3(str) {
   let counter = 0;
   for (let i of str) {

@@ -52,8 +52,8 @@ function findMax5(arr) {
 }
 
 
-console.log(findMax1([3, 7, 1, 9]));
-console.log(findMax2([3, 7, 1, 9]));
-console.log(findMax3([3, 7, 1, 9]));
-console.log(findMax4([3, 7, 1, 9]));
-console.log(findMax5([3, 7, 1, 9]));
+console.log(findMax1([3, 7, 1, 9])); //Output: 9
+console.log(findMax2([3, 7, 1, 9])); //Output: 9
+console.log(findMax3([3, 7, 1, 9])); //Output: 9
+console.log(findMax4([3, 7, 1, 9])); //Output: 9
+console.log(findMax5([3, 7, 1, 9])); //Output: 9

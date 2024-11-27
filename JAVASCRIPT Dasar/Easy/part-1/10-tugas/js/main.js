@@ -15,11 +15,5 @@ function hoursToSeconds2(hours) {
   return (hours * 3600) | 0;
 }
 
-//tanpa pembulatan sudah cukup
-function hoursToSeconds3(hours) {
-  return hours * 3600;
-}
-
 console.log(hoursToSeconds1(2));
 console.log(hoursToSeconds2(2));
-console.log(hoursToSeconds3(2));

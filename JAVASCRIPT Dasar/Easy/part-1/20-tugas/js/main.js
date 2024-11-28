@@ -38,6 +38,7 @@ function totalPrice4(prices) {
   return prices.reduce((result, item) => result + item, 0);
 }
 
+//
 function* totalPrice5(prices) {
   let result = 0;
   for (let item of prices) {

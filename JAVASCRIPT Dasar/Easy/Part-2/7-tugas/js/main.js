@@ -12,7 +12,7 @@ const countElements1 = arr => {
 //for of
 const countElements2 = arr => {
   let count = 0;
-  for (let item of arr) {
+  for (let _ of arr) {
     count++;
   }
   return count;

@@ -24,7 +24,7 @@ const capitalizeFirstLetter3 = str => {
 
 //regex replace
 const capitalizeFirstLetter4 = str => {
-    return str.replace(/^(\w)(.*)/, (match, firstChar, rest) => {
+    return str.replace(/^(\w)(.*)/, (_, firstChar, rest) => {
     return firstChar.toUpperCase() + rest.toLowerCase();
   });
 }

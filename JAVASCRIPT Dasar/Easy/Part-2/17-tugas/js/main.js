@@ -29,7 +29,6 @@ function countCommonElements2(arr1, arr2) {
 
 //filter & set
 function countCommonElements3(arr1, arr2) {
-  let count = 0;
   const set2 = new Set(arr2);
   return arr1.filter(item => set2.has(item)).length;
 }

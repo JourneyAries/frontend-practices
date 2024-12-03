@@ -6,3 +6,7 @@ const paragraphs = document.getElementsByTagName('p');
 for (let paragraph of paragraphs) {
 	paragraph.textContent = 'Paragraph Updated';
 }
+
+// Array.from(paragraphs).forEach((p) => {
+// 	p.textContent = 'Paragraph updated';
+// });

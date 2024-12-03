@@ -10,7 +10,6 @@ startButton.addEventListener('click', () => {
 
 	const interval = setInterval(() => {
 		position += 5;
-
 		box.style.left = position + 'px';
 
 		if (position >= 500) {

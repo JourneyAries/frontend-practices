@@ -22,6 +22,12 @@ btnAddTask.addEventListener('click', () => {
 	}
 	const list = document.createElement('li');
 	list.textContent = todoInput.value;
-  todoList.appendChild(list);
-  todoInput.value = '';
+	todoList.appendChild(list);
+	todoInput.value = '';
+});
+
+todoList.addEventListener('dblclick', (e) => {
+	if (e.target && e.target.nodeName == 'LI') {
+		todoList.remove(e.target);
+	}
 });

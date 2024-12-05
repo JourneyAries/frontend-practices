@@ -24,3 +24,7 @@ reverseButton.addEventListener('click', () => {
 	const reverseText = textInput.value.split('').reverse().join('');
 	result.textContent = reverseText;
 });
+
+textInput.addEventListener('input', () => {
+  result.textContent = textInput.value.split('').reverse().join('');
+})

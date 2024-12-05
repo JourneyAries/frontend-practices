@@ -15,5 +15,7 @@ const title = document.getElementById('title');
 const changeText = document.getElementById('changeText');
 
 changeText.addEventListener('click', () => {
-	title.textContent = 'Teks sudah digantikan';
+	// title.textContent = 'Teks sudah digantikan';
+	title.textContent = prompt('Masukan teks yang akan digantikan');
+	title.style.color = 'blue';
 });

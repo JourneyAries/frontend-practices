@@ -16,6 +16,11 @@ const reverseButton = document.getElementById('reverseButton');
 const result = document.getElementById('result');
 
 reverseButton.addEventListener('click', () => {
+	if (textInput.value.trim() === '') {
+		result.textContent = 'Error: masukan isi yang benar!';
+		result.style.color = 'red';
+		return;
+	}
 	const reverseText = textInput.value.split('').reverse().join('');
-  result.textContent = reverseText;
+	result.textContent = reverseText;
 });

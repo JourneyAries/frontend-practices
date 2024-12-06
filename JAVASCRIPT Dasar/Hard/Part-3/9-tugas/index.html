@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				text-align: center;
+				margin-top: 50px;
+			}
+			input,
+			button {
+				padding: 10px;
+				margin: 10px;
+				font-size: 1rem;
+			}
+			p {
+				font-size: 1.2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" id="palindromeInput" placeholder="Masukkan kata..." />
+		<button id="checkPalindrome">Periksa</button>
+		<p id="result"></p>
+		<script src="js/main.js"></script>
+	</body>
 </html>

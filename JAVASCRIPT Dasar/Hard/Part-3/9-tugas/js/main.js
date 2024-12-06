@@ -20,4 +20,10 @@ checkPalindrome.addEventListener('click', () => {
   const originText = palindromeInput.value.toLowerCase().replace('/[^a-z0-9]/g', '');
   const reverseText = originText.split('').reverse().join(''); 
   result.textContent = (originText === reverseText ? 'Palindrome' : 'Bukan Palindrome');
+
+  const originalWords = palindromeInput.value.toLowerCase().split(' ');
+  const reverseWords = [...originalWords].reverse();
+  if (originalWords.join(' ') === reverseWords.join(' ')) {
+    result.textContent += ' (Kalimat)';
+  }
 })

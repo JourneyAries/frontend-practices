@@ -17,6 +17,7 @@ const checkPalindrome = document.getElementById('checkPalindrome');
 const result = document.getElementById('result');
 
 checkPalindrome.addEventListener('click', () => {
-  const reverseInput = palindromeInput.value.split('').reverse().join('');
-  result.textContent = (palindromeInput.value === reverseInput ? 'Palindrome' : 'Bukan Palindrome');
+  const originText = palindromeInput.value.toLowerCase().replace('/[^a-z0-9]/g', '');
+  const reverseText = originText.split('').reverse().join(''); 
+  result.textContent = (originText === reverseText ? 'Palindrome' : 'Bukan Palindrome');
 })

@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			#inputText {
+				width: 100%;
+				padding: 5px;
+			}
+			#charCount {
+				font-weight: bold;
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<input type="text" id="inputText" placeholder="Ketik sesuatu..." />
+			<p>Jumlah karakter: <span id="charCount">0</span></p>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

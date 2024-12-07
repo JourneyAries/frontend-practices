@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			.calculator {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 50px;
+			}
+			.calculator input,
+			.calculator button {
+				margin: 5px;
+				padding: 10px;
+			}
+			.result {
+				font-size: 20px;
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="calculator">
+			<input type="text" id="input1" placeholder="Masukkan angka pertama" />
+			<input type="text" id="input2" placeholder="Masukkan angka kedua" />
+			<button id="add">+</button>
+			<button id="subtract">-</button>
+			<button id="multiply">*</button>
+			<button id="divide">/</button>
+			<div id="result" class="result"></div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

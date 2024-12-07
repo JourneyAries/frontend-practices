@@ -17,13 +17,17 @@ const btnSubmit = document.getElementById('submitBtn');
 const errorMessage = document.getElementById('errorMessage');
 
 btnSubmit.addEventListener('click', () => {
-	if (inputText.value.trim() === '') {
-		errorMessage.textContent = 'Invalid';
-		errorMessage.style.color = 'red';
-		return;
-	} else {
-		errorMessage.textContent = 'Input Valid!';
-		errorMessage.style.color = 'green';
-		return;
-	}
+	const isValid = inputText.value.trim() !== '';
+	errorMessage.textContent = isValid ? 'Input Valid' : 'Invalid';
+	errorMessage.style.color = isValid ? 'green' : 'red';
+
+	// if (inputText.value.trim() === '') {
+	// 	errorMessage.textContent = 'Invalid';
+	// 	errorMessage.style.color = 'red';
+	// 	return;
+	// } else {
+	// 	errorMessage.textContent = 'Input Valid!';
+	// 	errorMessage.style.color = 'green';
+	// 	return;
+	// }
 });

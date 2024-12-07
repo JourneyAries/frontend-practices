@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			.accordion-btn {
+				width: 100%;
+				text-align: left;
+				background-color: #f0f0f0;
+				border: 1px solid #ccc;
+				cursor: pointer;
+				padding: 10px;
+			}
+			.accordion-content {
+				display: none;
+				padding: 10px;
+				background-color: #f9f9f9;
+				border: 1px solid #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="accordion">
+			<button class="accordion-btn">Section 1</button>
+			<div class="accordion-content">Konten untuk Section 1</div>
+			<button class="accordion-btn">Section 2</button>
+			<div class="accordion-content">Konten untuk Section 2</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

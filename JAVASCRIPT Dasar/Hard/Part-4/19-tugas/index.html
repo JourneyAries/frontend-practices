@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			#dynamic-dropdown {
+				font-size: 16px;
+				padding: 10px;
+				margin-top: 20px;
+			}
+			#add-option-btn {
+				padding: 10px 20px;
+				font-size: 16px;
+				cursor: pointer;
+				margin-top: 20px;
+			}
+			#selected-option {
+				margin-top: 20px;
+				font-size: 18px;
+				color: darkblue;
+			}
+		</style>
+	</head>
+	<body>
+		<select id="dynamic-dropdown"></select>
+		<button id="add-option-btn">Tambah Pilihan</button>
+		<div id="selected-option"></div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

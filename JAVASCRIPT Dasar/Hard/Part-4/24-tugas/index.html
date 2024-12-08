@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			#user-form input {
+				padding: 10px;
+				margin: 10px;
+				font-size: 16px;
+			}
+			#user-form button {
+				padding: 10px 20px;
+				cursor: pointer;
+				margin-top: 10px;
+			}
+			#user-data {
+				margin-top: 20px;
+				font-size: 18px;
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="user-form">
+			<input type="text" id="name" placeholder="Nama" required />
+			<input type="email" id="email" placeholder="Email" required />
+			<input type="number" id="age" placeholder="Usia" required />
+			<button id="submit-btn">Kirim</button>
+		</div>
+		<div id="user-data"></div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

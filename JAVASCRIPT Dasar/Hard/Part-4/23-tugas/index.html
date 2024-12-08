@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			.product-item,
+			.cart-item {
+				font-size: 18px;
+				margin: 10px 0;
+			}
+			#cart {
+				margin-top: 20px;
+				font-size: 18px;
+			}
+			#total {
+				font-weight: bold;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="product-list">
+			<li class="product-item" data-price="1000">Laptop - $1000 <button class="buy-btn">Beli</button></li>
+			<li class="product-item" data-price="20">Kaos - $20 <button class="buy-btn">Beli</button></li>
+			<li class="product-item" data-price="2">Pisang - $2 <button class="buy-btn">Beli</button></li>
+		</ul>
+
+		<div id="cart">
+			<h3>Keranjang Belanja:</h3>
+			<ul id="cart-items"></ul>
+			<div id="total">Total: $0</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

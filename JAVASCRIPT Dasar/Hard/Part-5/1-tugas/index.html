@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+			}
+			.container {
+				max-width: 300px;
+				margin: auto;
+				text-align: center;
+			}
+			ul {
+				list-style-type: none;
+				padding: 0;
+			}
+			li {
+				background: #f0f0f0;
+				margin: 5px 0;
+				padding: 8px;
+				border-radius: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Tambah Barang ke Daftar</h2>
+			<input type="text" id="itemInput" placeholder="Masukkan nama barang" />
+			<button id="addButton">Tambah</button>
+			<ul id="itemList"></ul>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>

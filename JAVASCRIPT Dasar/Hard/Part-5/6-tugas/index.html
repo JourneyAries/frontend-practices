@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			body {
+				font-family: 'Arial', sans-serif;
+				background-color: #f5f5f5;
+				padding: 30px;
+				text-align: center;
+			}
+			.container {
+				background-color: #fff;
+				padding: 30px;
+				max-width: 500px;
+				margin: 0 auto;
+				border-radius: 10px;
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+			}
+			ul {
+				list-style-type: none;
+				padding: 0;
+			}
+			li {
+				background-color: #d1f7c4;
+				padding: 10px;
+				margin: 8px 0;
+				border-radius: 4px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			button {
+				background-color: #f44336;
+				color: white;
+				border: none;
+				padding: 5px 10px;
+				cursor: pointer;
+				border-radius: 4px;
+			}
+			button:hover {
+				background-color: #e53935;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Daftar Belanja</h2>
+			<input type="text" id="itemInput" placeholder="Masukkan nama barang" />
+			<button id="addButton">Tambah Barang</button>
+			<ul id="itemList">
+				<li>Barang 1 <button class="removeButton">Hapus</button></li>
+				<li>Barang 2 <button class="removeButton">Hapus</button></li>
+			</ul>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

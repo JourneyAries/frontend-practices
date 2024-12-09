@@ -52,6 +52,7 @@ container.addEventListener('click', (e) => {
 		}
 	}
 
+  //hapus barang
 	if (e.target && e.target.className === 'item') {
 		e.target.remove();
 	}

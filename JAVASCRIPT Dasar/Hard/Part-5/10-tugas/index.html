@@ -1,15 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f4f4f4;
+				padding: 20px;
+			}
+
+			.todo-container {
+				background-color: white;
+				padding: 20px;
+				border-radius: 10px;
+				width: 300px;
+				margin: 0 auto;
+			}
+
+			.todo-item {
+				padding: 10px;
+				margin: 10px 0;
+				background-color: #e0e0e0;
+				display: flex;
+				justify-content: space-between;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			.done {
+				text-decoration: line-through;
+			}
+
+			.btn-delete {
+				background-color: red;
+				color: white;
+				padding: 5px 10px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			.btn-mark-done {
+				background-color: green;
+				color: white;
+				padding: 5px 10px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			input[type='text'] {
+				padding: 10px;
+				width: 80%;
+				margin-right: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+			}
+
+			button {
+				padding: 10px;
+				border-radius: 5px;
+				background-color: #4caf50;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<form class="todo-container">
+			<h2>To-Do List</h2>
+			<input type="text" id="todo-input" placeholder="Tambah tugas baru..." />
+			<button id="add-btn" type="button">Tambah</button>
+			<ul id="todo-list">
+				<!-- Tugas akan ditambahkan di sini -->
+			</ul>
+		</form>
+		<script src="js/main.js"></script>
+	</body>
 </html>

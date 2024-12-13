@@ -1,15 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				text-align: center;
+				background-color: #f8f9fa;
+				padding: 20px;
+			}
+
+			.order-container {
+				background-color: white;
+				padding: 20px;
+				border-radius: 10px;
+				width: 300px;
+				margin: 0 auto;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+
+			.order-list {
+				text-align: left;
+				margin-top: 20px;
+			}
+
+			.order-item {
+				padding: 10px;
+				margin: 5px 0;
+				background-color: #f1f1f1;
+				border-radius: 5px;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.order-item button {
+				background-color: #dc3545;
+				color: white;
+				border: none;
+				cursor: pointer;
+				border-radius: 5px;
+				padding: 5px 10px;
+			}
+
+			.input-field,
+			button {
+				width: 100%;
+				margin: 10px 0;
+				padding: 10px;
+				border-radius: 5px;
+				border: 1px solid #ccc;
+			}
+
+			button {
+				background-color: #28a745;
+				color: white;
+				cursor: pointer;
+			}
+
+			.total {
+				margin-top: 20px;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="order-container">
+			<h2>Sistem Pemesanan Makanan</h2>
+			<input type="text" id="food-name" class="input-field" placeholder="Nama Makanan" />
+			<input type="number" id="food-quantity" class="input-field" placeholder="Jumlah" min="1" />
+			<button id="add-food">Tambah ke Keranjang</button>
+
+			<div class="order-list" id="order-list">
+				<!-- Daftar makanan dalam keranjang akan muncul di sini -->
+			</div>
+
+			<div class="total" id="total-price">
+				<!-- Total harga akan muncul di sini -->
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

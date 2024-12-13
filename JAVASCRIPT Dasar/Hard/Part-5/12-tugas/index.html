@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #e9ecef;
+				padding: 30px;
+			}
+
+			.bmi-container {
+				background-color: white;
+				padding: 30px;
+				width: 350px;
+				margin: 0 auto;
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+
+			h2 {
+				text-align: center;
+			}
+
+			.input-field {
+				width: 100%;
+				padding: 10px;
+				margin: 10px 0;
+				border-radius: 5px;
+				border: 1px solid #ccc;
+			}
+
+			button {
+				width: 100%;
+				padding: 10px;
+				background-color: #007bff;
+				color: white;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			.result {
+				text-align: center;
+				margin-top: 20px;
+				font-size: 18px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bmi-container">
+			<h2>Kalkulator BMI</h2>
+			<input type="number" id="weight" class="input-field" placeholder="Berat (kg)" required />
+			<input type="number" id="height" class="input-field" placeholder="Tinggi (cm)" required />
+			<button id="calculate-bmi">Hitung BMI</button>
+			<div id="bmi-result" class="result"></div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

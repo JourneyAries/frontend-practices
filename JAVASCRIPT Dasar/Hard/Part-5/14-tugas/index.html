@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				text-align: center;
+				background-color: #f8f9fa;
+				padding: 20px;
+			}
+
+			.todo-container {
+				background-color: white;
+				padding: 20px;
+				border-radius: 10px;
+				width: 300px;
+				margin: 0 auto;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+
+			.input-field,
+			button {
+				width: 100%;
+				margin: 10px 0;
+				padding: 10px;
+				border-radius: 5px;
+				border: 1px solid #ccc;
+			}
+
+			button {
+				background-color: #28a745;
+				color: white;
+				cursor: pointer;
+			}
+			.btnDelete {
+				background-color: red;
+			}
+
+			.todo-list {
+				margin-top: 20px;
+				text-align: left;
+			}
+
+			.todo-item {
+				background-color: #f1f1f1;
+				padding: 10px;
+				margin: 5px 0;
+				border-radius: 5px;
+				display: flex;
+				justify-content: space-between;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="todo-container">
+			<h2>Daftar Aktivitas Harian</h2>
+			<input type="text" id="todo-input" class="input-field" placeholder="Tambahkan aktivitas" />
+			<button id="add-todo">Tambah</button>
+			<ul id="todo-list">
+				<!-- Daftar aktivitas akan muncul di sini -->
+			</ul>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

@@ -1,15 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				text-align: center;
+				background-color: #f4f4f4;
+				padding: 20px;
+				margin: 0;
+			}
+
+			.calculator-container {
+				background-color: white;
+				padding: 20px;
+				border-radius: 10px;
+				width: 350px;
+				margin: 0 auto;
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+			}
+
+			h2 {
+				color: #333;
+				margin-bottom: 20px;
+			}
+
+			.input-field,
+			select,
+			button {
+				width: 100%;
+				margin: 10px 0;
+				padding: 12px;
+				border-radius: 5px;
+				border: 1px solid #ccc;
+				font-size: 16px;
+			}
+
+			button {
+				background-color: #007bff;
+				color: white;
+				cursor: pointer;
+				border: none;
+			}
+
+			button:hover {
+				background-color: #0056b3;
+			}
+
+			.result {
+				font-size: 20px;
+				margin-top: 20px;
+				color: #333;
+				font-weight: bold;
+			}
+
+			.history {
+				margin-top: 30px;
+				padding: 10px;
+				background-color: #f9f9f9;
+				border-radius: 5px;
+				border: 1px solid #ddd;
+			}
+
+			.history h3 {
+				color: #007bff;
+				margin-bottom: 10px;
+			}
+
+			#history-list {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			#history-list li {
+				padding: 8px 12px;
+				margin-bottom: 8px;
+				background-color: #e9ecef;
+				border-radius: 5px;
+				font-size: 14px;
+				color: #333;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			#history-list li span {
+				color: #6c757d;
+				font-size: 12px;
+			}
+
+			#history-list li:hover {
+				background-color: #d1e7ff;
+				cursor: pointer;
+			}
+
+			#history-list li .delete-history {
+				cursor: pointer;
+				color: red;
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="calculator-container">
+			<h2>Kalkulator Sederhana</h2>
+			<input type="number" id="num1" class="input-field" placeholder="Angka pertama" />
+			<input type="number" id="num2" class="input-field" placeholder="Angka kedua" />
+			<select id="operation" class="input-field">
+				<option value="add">Tambah</option>
+				<option value="subtract">Kurang</option>
+				<option value="multiply">Kali</option>
+				<option value="divide">Bagi</option>
+			</select>
+			<button id="calculate">Hitung</button>
+			<div class="result" id="result"></div>
+			<div id="history" class="history">
+				<h3>Riwayat Perhitungan</h3>
+				<ul id="history-list"></ul>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

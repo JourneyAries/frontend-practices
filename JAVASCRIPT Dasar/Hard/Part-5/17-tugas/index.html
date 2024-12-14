@@ -1,15 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f4f4f4;
+			}
+			.container {
+				width: 60%;
+				margin: 20px auto;
+				background-color: #fff;
+				padding: 20px;
+				border-radius: 8px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			}
+			h2 {
+				text-align: center;
+				color: #333;
+			}
+			input[type='text'],
+			input[type='email'],
+			input[type='tel'] {
+				width: 100%;
+				padding: 10px;
+				margin: 10px 0;
+				border: 1px solid #ddd;
+				border-radius: 4px;
+			}
+			.contact-list {
+				list-style-type: none;
+				padding: 0;
+			}
+			.contact-item {
+				padding: 10px;
+				background-color: #f9f9f9;
+				margin: 5px 0;
+				border-radius: 4px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.btn {
+				background-color: #f44336;
+				color: white;
+				border: none;
+				padding: 5px 10px;
+				cursor: pointer;
+				border-radius: 4px;
+			}
+			.btn.edit {
+				background-color: #4caf50;
+			}
+			.btn:hover {
+				background-color: #ddd;
+			}
+			.search-input {
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 20px;
+				border: 1px solid #ddd;
+				border-radius: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Daftar Kontak</h2>
+			<input type="text" class="search-input" id="search-contact" placeholder="Cari kontak..." />
+			<input type="text" id="contact-name" placeholder="Nama" />
+			<input type="email" id="contact-email" placeholder="Email" />
+			<input type="tel" id="contact-phone" placeholder="Nomor Telepon" />
+			<button id="add-contact-btn">Tambah Kontak</button>
+
+			<ul class="contact-list" id="contact-list">
+				<!-- Daftar kontak akan muncul di sini -->
+			</ul>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

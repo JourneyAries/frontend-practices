@@ -1,15 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f8f9fa;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				height: 100vh;
+				flex-direction: column;
+			}
+			.menu,
+			.cart {
+				background-color: #fff;
+				padding: 20px;
+				border-radius: 8px;
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+				margin-bottom: 20px;
+				width: 300px;
+			}
+			.menu h2,
+			.cart h2 {
+				font-size: 1.5em;
+				color: #333;
+			}
+			.menu-item,
+			.cart-item {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 10px;
+			}
+			.menu-item button,
+			.cart-item button {
+				padding: 5px 10px;
+				background-color: #28a745;
+				color: white;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+			.menu-item button:hover,
+			.cart-item button:hover {
+				background-color: #218838;
+			}
+			.cart-item .quantity {
+				width: 50px;
+				text-align: center;
+			}
+			.total-price {
+				font-size: 1.5em;
+				color: #333;
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="menu">
+			<h2>Menu Restoran</h2>
+			<div class="menu-item">
+				<span>Pizza</span>
+				<button class="add-to-cart">Tambah</button>
+			</div>
+			<div class="menu-item">
+				<span>Pasta</span>
+				<button class="add-to-cart">Tambah</button>
+			</div>
+			<div class="menu-item">
+				<span>Burger</span>
+				<button class="add-to-cart">Tambah</button>
+			</div>
+			<!-- Tambahkan item menu sesuai kebutuhan -->
+		</div>
+
+		<div class="cart">
+			<h2>Keranjang Pemesanan</h2>
+			<div id="cart-list">
+				<!-- Item keranjang akan ditambahkan di sini -->
+			</div>
+			<div class="total-price" id="total-price">Total: Rp0</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

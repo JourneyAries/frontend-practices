@@ -12,5 +12,5 @@ const btnConvert = document.getElementById('convert-btn');
 const outputText = document.getElementById('output-text');
 
 btnConvert.addEventListener('click', () => {
-  outputText.textContent = inputText.value.trim().toUpperCase();
-})
+	outputText.textContent = inputText.value.trim().toUpperCase();
+});

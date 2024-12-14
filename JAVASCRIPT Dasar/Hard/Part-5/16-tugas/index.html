@@ -1,15 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-  <!-- link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <script src="js/main.js"></script>
-</body>
+		<!-- link -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f4f4f4;
+			}
+			.container {
+				width: 80%;
+				margin: 20px auto;
+				background-color: #fff;
+				padding: 20px;
+				border-radius: 8px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			}
+			h2 {
+				text-align: center;
+				color: #333;
+				padding-bottom: 16px;
+			}
+			input[type='text'] {
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 20px;
+				border: 1px solid #ddd;
+				border-radius: 4px;
+			}
+			ul {
+				list-style-type: none;
+				padding: 0;
+			}
+			li {
+				padding: 10px;
+				background-color: #f9f9f9;
+				margin: 5px 0;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+			li:hover {
+				background-color: #e0e0e0;
+			}
+			#book-detail {
+				display: none;
+				margin-top: 20px;
+				background-color: #f9f9f9;
+				padding: 20px;
+				border-radius: 8px;
+			}
+			#book-detail h3 {
+				margin-top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Sistem Pencarian Buku</h2>
+			<input type="text" id="search-input" placeholder="Cari buku berdasarkan judul..." />
+			<ul id="book-list">
+				<!-- Daftar buku akan ditampilkan di sini -->
+			</ul>
+			<div id="book-detail">
+				<!-- Detail buku akan ditampilkan di sini -->
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

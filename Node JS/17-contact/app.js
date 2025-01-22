@@ -1,6 +1,12 @@
 const express = require('express');
+const { body, validationResult, check, cookie } = require('express-validator');
+//body untuk menangkap apa yang sudah di isi dalam form
+// validation result itu menyimpan data, lolos atau engga
 const expressLayouts = require('express-ejs-layouts');
-const { loadContact, findContact } = require('./utils/contacts');
+const { loadContact, findContact, addContact, cekDuplikat } = require('./utils/contacts');
+const session = require('express-session');
+const cookieParser = require('cookie-parser');
+const flash = require('connect-flash');
 
 const app = express();
 const port = 3000;
@@ -8,6 +14,19 @@ const port = 3000;
 app.set('view engine', 'ejs');
 app.use(expressLayouts); //3rd middleware
 app.use(express.static('public')); //built-in middleware
+app.use(express.urlencoded({ extended: true }));
+
+//konfigurasi flash
+app.use(cookieParser('secret'));
+app.use(
+	session({
+		cookie: { maxAge: 6000 },
+		secret: 'secret',
+		resave: true,
+		saveUninitialized: true,
+	})
+);
+app.use(flash());
 
 app.get('/', (req, res) => {
 	const mahasiswa = [
@@ -48,11 +67,50 @@ app.get('/contact', (req, res) => {
 	res.render('contact', {
 		title: 'Halaman Contact',
 		layout: 'partials/main-layout',
-		//kirim contact ke view
 		contacts,
+		msg: req.flash('msg'),
 	});
 });
 
+app.get('/contact/add', (req, res) => {
+	res.render('add-contact', {
+		title: 'Form Tambah Data Contact',
+		layout: 'partials/main-layout',
+	});
+});
+
+// process data contact
+app.post(
+	'/contact',
+	[
+		body('nama').custom((value) => {
+			const duplikat = cekDuplikat(value);
+			if (duplikat) {
+				throw new Error('Nama contact sudah digunakan!');
+			}
+			return true;
+		}),
+		check('email', 'Email tidak valid').isEmail(),
+		check('nohp', 'No HP tidak valid').isMobilePhone('id-ID'),
+	],
+	(req, res) => {
+		const errors = validationResult(req);
+		if (!errors.isEmpty()) {
+			res.render('add-contact', {
+				title: 'Form Tambah Data Contact',
+				layout: 'partials/main-layout',
+				errors: errors.array(),
+			});
+		} else {
+			addContact(req.body);
+			//kirimkan flash message
+			req.flash('msg', 'Data contact berhasil ditambahkan');
+			res.redirect('/contact');
+		}
+	}
+);
+
+//akan menangkap apapun setelah slash, klo mau bikin route baru, pastikan sebelum route yang ini
 app.get('/contact/:nama', (req, res) => {
 	//kita akan cari contact singular
 	const contact = findContact(req.params.nama);

@@ -3,7 +3,7 @@ const { body, validationResult, check, cookie } = require('express-validator');
 //body untuk menangkap apa yang sudah di isi dalam form
 // validation result itu menyimpan data, lolos atau engga
 const expressLayouts = require('express-ejs-layouts');
-const { loadContact, findContact, addContact, cekDuplikat } = require('./utils/contacts');
+const { loadContact, findContact, addContact, cekDuplikat, deleteContact } = require('./utils/contacts');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const flash = require('connect-flash');
@@ -76,6 +76,7 @@ app.get('/contact/add', (req, res) => {
 	res.render('add-contact', {
 		title: 'Form Tambah Data Contact',
 		layout: 'partials/main-layout',
+		errors: [],
 	});
 });
 
@@ -109,6 +110,21 @@ app.post(
 		}
 	}
 );
+
+app.get('/contact/delete/:nama', (req, res) => {
+	//harus dicek dulu ada ga di contacts
+	const contacts = findContact(req.params.nama);
+
+	//jika contact tidak ada
+	if (!contacts) {
+		res.status('404');
+		res.send('<h1>404</h1>');
+	} else {
+		deleteContact(req.params.nama);
+		req.flash('msg', 'Data contact berhasil dihapus');
+		res.redirect('/contact');
+	}
+});
 
 //akan menangkap apapun setelah slash, klo mau bikin route baru, pastikan sebelum route yang ini
 app.get('/contact/:nama', (req, res) => {

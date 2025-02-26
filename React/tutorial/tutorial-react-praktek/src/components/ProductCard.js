@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { MdDeleteForever } from 'react-icons/md';
 import { FaEdit } from 'react-icons/fa';
 import ProductEdit from './ProductEdit';
+import ProductContext from '../context/products';
 
-const ProductCard = ({ product, onDeleteProduct, onEditProduct }) => {
+const ProductCard = ({ product }) => {
+	const { onDeleteProduct, onEditProduct } = useContext(ProductContext);
 	const { id, nama, deskripsi, imageURL } = product;
 	const [jumlahProduct, setJumlahProduct] = useState(0);
 	const [showEdit, setShowEdit] = useState(false);
@@ -61,7 +63,10 @@ const ProductCard = ({ product, onDeleteProduct, onEditProduct }) => {
 							<b>{nama}</b>
 						</h4>
 						<p>{deskripsi}</p>
-						<div className={`card-keranjang ${jumlahProduct > 0 ? 'jumlah-product' : 'show-keranjang'}`}>
+						<div
+							className={`card-keranjang ${
+								jumlahProduct > 0 ? 'jumlah-product' : 'show-keranjang'
+							}`}>
 							{jumlahProduct > 0 ? (
 								<>
 									<button

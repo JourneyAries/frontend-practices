@@ -3,27 +3,30 @@ import ProductList from './components/ProductList';
 import { useState, useEffect } from 'react';
 import ProductCreate from './components/ProductCreate';
 import axios from 'axios';
+import {
+	fetchProductsApi,
+	createProductApi,
+	editProductApi,
+	deleteProductApi,
+} from './api/productsAPI';
 
 function App() {
 	const [products, setProducts] = useState([]);
 	const fetchProducts = async () => {
-		const response = await axios.get('http://127.0.0.1:3005/products');
+		const response = await fetchProductsApi();
 		setProducts(response.data);
 	};
 	useEffect(() => {
 		fetchProducts();
 	}, []);
 	const onCreateProduct = async (product) => {
-		const response = await axios.post(
-			'http://127.0.0.1:3005/products',
-			product,
-		);
+		const response = await createProductApi(product);
 
 		setProducts([...products, response.data]);
 	};
 
 	const onDeleteProduct = async (id) => {
-		await axios.delete(`http://127.0.0.1:3005/products/${id}`);
+		await deleteProductApi(id);
 		const updatedProduct = products.filter((product) => {
 			return product.id !== id;
 		});
@@ -31,10 +34,7 @@ function App() {
 	};
 
 	const onEditProduct = async (id, data) => {
-		const response = await axios.put(
-			`http://127.0.0.1:3005/products/${id}`,
-			data,
-		);
+		const response = await editProductApi(id, data);
 		const updatedProducts = products.map((product) => {
 			if (product.id === id) {
 				return { ...product, ...response.data };

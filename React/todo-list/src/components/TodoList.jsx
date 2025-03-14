@@ -1,7 +1,17 @@
 // import React from 'react';
-import TodoItem from './TodoItem';
+import { useEffect } from 'react';
+import TodoItem from '../containers/TodoItem';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchTodos } from '../store/thunks/todoThunks';
 
-const TodoList = ({ todos, editTodo, deleteTodo }) => {
+const TodoList = () => {
+	const dispatch = useDispatch();
+	const todos = useSelector((state) => {
+		return state.todos.data;
+	});
+	useEffect(() => {
+		fetchTodos();
+	}, []);
 	return (
 		<ul className='todo-list'>
 			{todos.map((todo) => {
@@ -9,8 +19,6 @@ const TodoList = ({ todos, editTodo, deleteTodo }) => {
 					<TodoItem
 						key={todo.id}
 						todo={todo}
-						editTodo={editTodo}
-						deleteTodo={deleteTodo}
 					/>
 				);
 			})}
